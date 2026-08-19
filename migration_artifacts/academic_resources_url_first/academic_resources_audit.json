@@ -1,0 +1,10 @@
+{
+  "resource_count": 14,
+  "chunk_count": 14,
+  "failure_count": 0,
+  "failures": [],
+  "pinecone_written": false,
+  "pinecone_inference_used": false,
+  "ready_for_embedding": true,
+  "url_metadata_fallback_count": 14
+}

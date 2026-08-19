@@ -1,0 +1,25 @@
+{
+  "description": "Representative official LBRCE HTML pages for the local embedding and metadata benchmark. This manifest is used offline from Pinecone and does not write vectors.",
+  "pages": [
+    {"url": "https://www.lbrce.ac.in/overview.php", "expected_category": "college_profile"},
+    {"url": "https://lbrce.ac.in/admission_pages/admissions.php", "expected_category": "admission"},
+    {"url": "https://www.lbrce.ac.in/placements/stat2526.php", "expected_category": "placement"},
+    {"url": "https://www.lbrce.ac.in/academic_pages/course_structure.php", "expected_category": "academic_programs"},
+    {"url": "https://www.lbrce.ac.in/academic_pages/acadregulations.php", "expected_category": "regulation_directory"},
+    {"url": "https://lbrce.ac.in/academic_pages/timetables.php", "expected_category": "timetable_directory"},
+    {"url": "https://lbrce.ac.in/academic_pages/studentslist.php", "expected_category": "student_list"},
+    {"url": "https://lbrce.ac.in/studentcorner_pages/central_library.php", "expected_category": "facility"},
+    {"url": "https://lbrce.ac.in/studentcorner_pages/hostels.php", "expected_category": "facility"},
+    {"url": "https://lbrce.ac.in/ece/ececontact.php", "expected_category": "department_contact"},
+    {"url": "https://lbrce.ac.in/cse/csecontact.php", "expected_category": "department_contact"},
+    {"url": "https://www.lbrce.ac.in/cse/csetimetables.php", "expected_category": "timetable_directory"},
+    {"url": "https://www.lbrce.ac.in/ece/ecetimetables.php", "expected_category": "timetable_directory"},
+    {"url": "https://www.lbrce.ac.in/cse/csestudentslist.php", "expected_category": "student_list"},
+    {"url": "https://www.lbrce.ac.in/ece/ecestudentslist.php", "expected_category": "student_list"},
+    {"url": "https://www.lbrce.ac.in/cse/", "expected_category": "department_home"},
+    {"url": "https://www.lbrce.ac.in/ece/", "expected_category": "department_home"},
+    {"url": "https://www.lbrce.ac.in/eee/", "expected_category": "department_home"},
+    {"url": "https://www.lbrce.ac.in/it/", "expected_category": "department_home"},
+    {"url": "https://www.lbrce.ac.in/", "expected_category": "college_profile"}
+  ]
+}

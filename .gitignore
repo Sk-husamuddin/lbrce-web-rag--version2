@@ -1,0 +1,202 @@
+# ==============================
+# LBRCE Web RAG project
+# Root-level .gitignore
+# ==============================
+
+# ------------------------------
+# Secrets and local environment
+# ------------------------------
+.env
+.env.*
+!.env.example
+*.env.local
+*.local
+
+# API keys and credential files
+*.pem
+*.key
+*.crt
+credentials.json
+service-account*.json
+client_secret*.json
+
+# ------------------------------
+# Python
+# ------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# Packaging and distribution
+build/
+dist/
+*.egg-info/
+.eggs/
+ pip-wheel-metadata/
+MANIFEST
+*.manifest
+*.spec
+
+# Test, coverage, and type-checker caches
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.mypy_cache/
+.pyre/
+.ruff_cache/
+.hypothesis/
+.pytype/
+
+# Jupyter and notebook checkpoints
+.ipynb_checkpoints/
+
+# ------------------------------
+# Node.js / Next.js frontend
+# ------------------------------
+node_modules/
+.next/
+out/
+coverage/
+.turbo/
+.vercel/
+
+# Package-manager logs and caches
+.npm/
+.pnpm-store/
+.yarn/
+.yarn-cache/
+.yarn-integrity
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Optional local TypeScript build output
+*.tsbuildinfo
+
+# ------------------------------
+# Runtime logs and local output
+# ------------------------------
+*.log
+logs/
+log/
+
+# Uvicorn, FastAPI, and temporary runtime files
+*.pid
+*.seed
+*.pid.lock
+.tmp/
+tmp/
+temp/
+
+# ------------------------------
+# RAG ingestion generated artifacts
+# ------------------------------
+# Local crawl/download caches and checkpoints
+crawl_cache/
+cache/
+backend_cache/
+ingestion_cache/
+checkpoints/
+
+# Generated chunk files and local vector data
+# Keep approved manifests and registries tracked.
+*.chunks.json
+*.chunks.jsonl
+*.vectors.json
+*.vectors.jsonl
+*.faiss
+*.pkl
+*.pickle
+*.npy
+*.npz
+
+# Generated PDFs, extracted text, and downloaded source copies
+_downloads/
+downloads/
+extracted/
+extracted_text/
+rendered_pages/
+
+# Common generated ingestion reports and test outputs
+*_test_output.txt
+*_test_output.log
+*_ingestion_report.txt
+*_ingestion_report.log
+
+# ------------------------------
+# Keep approved project manifests tracked
+# ------------------------------
+!scripts/
+!scripts/**/*.json
+!backend/
+!backend/**/*.py
+!frontend/
+!frontend/**/*.ts
+!frontend/**/*.tsx
+!frontend/**/*.js
+!frontend/**/*.jsx
+!frontend/**/*.css
+
+# ------------------------------
+# IDE and editor files
+# ------------------------------
+.vscode/*
+!.vscode/settings.json.example
+.idea/
+*.iml
+*.suo
+*.user
+*.userossc
+*.sln.docstates
+.history/
+
+# ------------------------------
+# Operating-system files
+# ------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# ------------------------------
+# Archives and generated bundles
+# ------------------------------
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+
+# ------------------------------
+# Local database files
+# ------------------------------
+*.sqlite
+*.sqlite3
+*.db
+
+# ------------------------------
+# Scratch files
+# ------------------------------
+scratch/
+*.swp
+*.swo
+*~
+*.bak
+*.orig

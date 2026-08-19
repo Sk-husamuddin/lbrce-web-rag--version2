@@ -1,0 +1,59 @@
+{
+  "resource_type": "student_list_html",
+  "pages": [
+    {
+      "title": "LBRCE Department Wise Students",
+      "url": "https://lbrce.ac.in/academic_pages/studentslist.php"
+    },
+    {
+      "title": "LBRCE ASE Students List",
+      "url": "https://www.lbrce.ac.in/ase/asestudentslist.php",
+      "department": "ase"
+    },
+    {
+      "title": "LBRCE AI&DS Students List",
+      "url": "https://www.lbrce.ac.in/ai/aistudentslist.php",
+      "department": "ai_ds"
+    },
+    {
+      "title": "LBRCE Civil Engineering Students List",
+      "url": "https://www.lbrce.ac.in/civil/civilstudentslist.php",
+      "department": "ce"
+    },
+    {
+      "title": "LBRCE CSE Students List",
+      "url": "https://www.lbrce.ac.in/cse/csestudentslist.php",
+      "department": "cse"
+    },
+    {
+      "title": "LBRCE CSE AI&ML Students List",
+      "url": "https://www.lbrce.ac.in/csm/csmstudentslist.php",
+      "department": "cse_ai_ml"
+    },
+    {
+      "title": "LBRCE EEE Students List",
+      "url": "https://www.lbrce.ac.in/eee/eeestudentslist.php",
+      "department": "eee"
+    },
+    {
+      "title": "LBRCE ECE Students List",
+      "url": "https://www.lbrce.ac.in/ece/ecestudentslist.php",
+      "department": "ece"
+    },
+    {
+      "title": "LBRCE IT Students List",
+      "url": "https://www.lbrce.ac.in/it/itstudentslist.php",
+      "department": "it"
+    },
+    {
+      "title": "LBRCE Mechanical Engineering Students List",
+      "url": "https://www.lbrce.ac.in/mech/mechstudentslist.php",
+      "department": "me"
+    },
+    {
+      "title": "LBRCE MBA Students List",
+      "url": "https://www.lbrce.ac.in/mba/mbastudentslist.php",
+      "department": "mba"
+    }
+  ]
+}

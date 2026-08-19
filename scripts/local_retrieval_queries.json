@@ -1,0 +1,84 @@
+{
+  "queries": [
+    {
+      "id": "location",
+      "query": "Where is LBRCE located?",
+      "page_category": "college_profile",
+      "expected_url_contains": "overview.php"
+    },
+    {
+      "id": "placement",
+      "query": "Show the latest 2025-26 placement statistics and total placements",
+      "page_category": "placement",
+      "expected_url_contains": "stat2526.php"
+    },
+    {
+      "id": "admission",
+      "query": "How do I get admission into LBRCE?",
+      "page_category": "admission",
+      "expected_url_contains": "admissions.php"
+    },
+    {
+      "id": "cse_hod",
+      "query": "Who is the current HOD of CSE?",
+      "page_category": "department_contact",
+      "department": "cse",
+      "expected_url_contains": "csecontact.php"
+    },
+    {
+      "id": "ece_hod",
+      "query": "Who is the current HOD of ECE?",
+      "page_category": "department_contact",
+      "department": "ece",
+      "expected_url_contains": "ececontact.php"
+    },
+    {
+      "id": "library",
+      "query": "What facilities and resources are available in the LBRCE central library?",
+      "page_category": "facility",
+      "topic": "library",
+      "expected_url_contains": "central_library.php"
+    },
+    {
+      "id": "hostel",
+      "query": "Does LBRCE provide boys and girls hostel facilities?",
+      "page_category": "facility",
+      "topic": "hostel",
+      "expected_url_contains": "hostels.php"
+    },
+    {
+      "id": "cse_timetable",
+      "query": "Where can I find the official CSE timetable resources?",
+      "page_category": "timetable_directory",
+      "department": "cse",
+      "expected_url_contains": "csetimetables.php"
+    },
+    {
+      "id": "cse_students",
+      "query": "Show the official CSE student list page",
+      "page_category": "student_list",
+      "department": "cse",
+      "expected_url_contains": "csestudentslist.php"
+    },
+    {
+      "id": "regulations",
+      "query": "Where are the official LBRCE academic regulations published?",
+      "page_category": "regulation_directory",
+      "expected_url_contains": "acadregulations.php"
+    },
+    {
+      "id": "programs",
+      "query": "What B.Tech and M.Tech programs does LBRCE offer?",
+      "page_category": "academic_programs",
+      "expected_url_contains": "course_structure.php"
+    },
+    {
+      "id": "cse_department",
+      "query": "Tell me about the official CSE department page",
+      "page_category": "department_home",
+      "department": "cse",
+      "topic": "department_home",
+      "expected_url_contains": "/cse"
+    }
+  ]
+}

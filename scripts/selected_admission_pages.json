@@ -1,0 +1,10 @@
+{
+  "resource_type": "admission_html",
+  "pages": [
+    {"title": "LBRCE Admission Procedure", "url": "https://lbrce.ac.in/admission_pages/admissions.php"},
+    {"title": "LBRCE Programmes Offered", "url": "https://lbrce.ac.in/admission_pages/courses.php"},
+    {"title": "LBRCE Fee Structure", "url": "https://lbrce.ac.in/admission_pages/feestructure.php"},
+    {"title": "LBRCE Course Wise Last Ranks", "url": "https://lbrce.ac.in/admission_pages/lastrank.php"},
+    {"title": "LBRCE Category B and NRI Admissions", "url": "https://lbrce.ac.in/admission_pages/CatBNonNRISpotSeats.php"}
+  ]
+}

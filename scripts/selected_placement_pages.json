@@ -1,0 +1,17 @@
+{
+  "resource_type": "placement_statistics_html",
+  "pages": [
+    {"title": "LBRCE Placement Statistics", "url": "https://www.lbrce.ac.in/placements/pstatistics.php"},
+    {"title": "LBRCE Placements 2025-26", "url": "https://www.lbrce.ac.in/placements/stat2526.php"},
+    {"title": "LBRCE Placements 2024-25", "url": "https://www.lbrce.ac.in/placements/stat2425.php"},
+    {"title": "LBRCE Placements 2023-24", "url": "https://www.lbrce.ac.in/placements/stat2324.php"},
+    {"title": "LBRCE Placements 2022-23", "url": "https://www.lbrce.ac.in/placements/stat2223.php"},
+    {"title": "LBRCE Placements 2021-22", "url": "https://www.lbrce.ac.in/placements/stat2122.php"},
+    {"title": "LBRCE Placements 2020-21", "url": "https://www.lbrce.ac.in/placements/stat2021.php"},
+    {"title": "LBRCE Placements 2019-20", "url": "https://www.lbrce.ac.in/placements/stat1920.php"},
+    {"title": "LBRCE Placements 2018-19", "url": "https://www.lbrce.ac.in/placements/stat1819.php"},
+    {"title": "LBRCE Placements 2017-18", "url": "https://www.lbrce.ac.in/placements/stat1718.php"},
+    {"title": "LBRCE Placements 2016-17", "url": "https://www.lbrce.ac.in/placements/stat1617.php"},
+    {"title": "LBRCE Placements 2015-16", "url": "https://www.lbrce.ac.in/placements/stat1516.php"}
+  ]
+}

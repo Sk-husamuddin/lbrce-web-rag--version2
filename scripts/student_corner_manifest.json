@@ -1,0 +1,76 @@
+{
+  "description": "Missing official LBRCE Student Corner pages not already represented in the corrected full registry or supplemental authoritative set.",
+  "resource_type": "student_corner_html",
+  "pages": [
+    {
+      "id": "student-corner-scholarships",
+      "url": "https://www.lbrce.ac.in/studentcorner_pages/scholarships.php",
+      "title": "LBRCE Student Scholarships",
+      "page_category": "student_corner",
+      "topic": "scholarships"
+    },
+    {
+      "id": "student-corner-clubs",
+      "url": "https://www.lbrce.ac.in/studentcorner_pages/clubs.php",
+      "title": "LBRCE Student Clubs",
+      "page_category": "student_corner",
+      "topic": "clubs"
+    },
+    {
+      "id": "student-corner-internet",
+      "url": "https://www.lbrce.ac.in/studentcorner_pages/internet.php",
+      "title": "LBRCE High-Speed Internet",
+      "page_category": "student_corner",
+      "topic": "internet"
+    },
+    {
+      "id": "student-corner-sports",
+      "url": "https://www.lbrce.ac.in/sports/index.php",
+      "title": "LBRCE Physical Education and Sports",
+      "page_category": "student_corner",
+      "topic": "sports"
+    },
+    {
+      "id": "student-corner-yoga",
+      "url": "https://www.lbrce.ac.in/yoga/index.php",
+      "title": "LBRCE Yoga and Meditation",
+      "page_category": "student_corner",
+      "topic": "yoga_meditation"
+    },
+    {
+      "id": "student-corner-ncc",
+      "url": "https://www.lbrce.ac.in/studentcorner_pages/ncc.php",
+      "title": "LBRCE NCC Unit",
+      "page_category": "student_corner",
+      "topic": "ncc"
+    },
+    {
+      "id": "student-corner-counsellor",
+      "url": "https://www.lbrce.ac.in/studentcorner_pages/studentcounsellor.php",
+      "title": "LBRCE Student Counsellor",
+      "page_category": "student_corner",
+      "topic": "student_counsellor"
+    },
+    {
+      "id": "student-corner-dispensary",
+      "url": "https://www.lbrce.ac.in/studentcorner_pages/dispensary.php",
+      "title": "LBRCE Dispensary and Medical Services",
+      "page_category": "student_corner",
+      "topic": "dispensary"
+    },
+    {
+      "id": "student-corner-bank",
+      "url": "https://www.lbrce.ac.in/studentcorner_pages/bank.php",
+      "title": "LBRCE Campus Bank",
+      "page_category": "student_corner",
+      "topic": "bank"
+    },
+    {
+      "id": "student-corner-cafeteria",
+      "url": "https://www.lbrce.ac.in/studentcorner_pages/cafeteria.php",
+      "title": "LBRCE Cafeteria",
+      "page_category": "student_corner",
+      "topic": "cafeteria"
+    }
+  ]
+}

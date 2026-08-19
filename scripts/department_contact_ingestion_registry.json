@@ -1,0 +1,72 @@
+{
+  "https://lbrce.ac.in/cse/csecontact.php": {
+    "status": "success",
+    "department": "cse",
+    "title": "CSE Department Contact",
+    "chunk_count": 1,
+    "updated_at": "2026-08-16T01:47:36.172225+00:00"
+  },
+  "https://lbrce.ac.in/ece/ececontact.php": {
+    "status": "success",
+    "department": "ece",
+    "title": "ECE Department Contact",
+    "chunk_count": 1,
+    "updated_at": "2026-08-16T01:47:38.059955+00:00"
+  },
+  "https://lbrce.ac.in/eee/eeecontact.php": {
+    "status": "success",
+    "department": "eee",
+    "title": "EEE Department Contact",
+    "chunk_count": 1,
+    "updated_at": "2026-08-16T01:47:40.725581+00:00"
+  },
+  "https://lbrce.ac.in/civil/civilcontact.php": {
+    "status": "success",
+    "department": "civil",
+    "title": "Civil Engineering Department Contact",
+    "chunk_count": 1,
+    "updated_at": "2026-08-16T01:47:42.393756+00:00"
+  },
+  "https://lbrce.ac.in/it/itcontact.php": {
+    "status": "success",
+    "department": "it",
+    "title": "IT Department Contact",
+    "chunk_count": 1,
+    "updated_at": "2026-08-16T01:47:44.308062+00:00"
+  },
+  "https://lbrce.ac.in/mech/mechcontact.php": {
+    "status": "success",
+    "department": "mech",
+    "title": "Mechanical Engineering Department Contact",
+    "chunk_count": 1,
+    "updated_at": "2026-08-16T01:47:45.988125+00:00"
+  },
+  "https://lbrce.ac.in/ase/asecontact.php": {
+    "status": "success",
+    "department": "ase",
+    "title": "Aerospace Engineering Department Contact",
+    "chunk_count": 1,
+    "updated_at": "2026-08-16T01:47:47.903303+00:00"
+  },
+  "https://lbrce.ac.in/ai/aicontact.php": {
+    "status": "success",
+    "department": "ai",
+    "title": "AI and Data Science Department Contact",
+    "chunk_count": 1,
+    "updated_at": "2026-08-16T01:47:49.561627+00:00"
+  },
+  "https://lbrce.ac.in/csm/csmcontact.php": {
+    "status": "success",
+    "department": "csm",
+    "title": "CSE AI and ML Department Contact",
+    "chunk_count": 1,
+    "updated_at": "2026-08-16T01:47:51.206222+00:00"
+  },
+  "https://lbrce.ac.in/mba/mbacontact.php": {
+    "status": "success",
+    "department": "mba",
+    "title": "MBA Department Contact",
+    "chunk_count": 1,
+    "updated_at": "2026-08-16T01:47:52.906213+00:00"
+  }
+}

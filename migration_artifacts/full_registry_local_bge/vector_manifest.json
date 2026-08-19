@@ -1,0 +1,11 @@
+{
+  "model": "BAAI/bge-large-en-v1.5",
+  "dimension": 1024,
+  "chunk_count": 473,
+  "vector_file": "vectors.npy",
+  "mean_norm": 1.0,
+  "min_norm": 1.0,
+  "max_norm": 1.0,
+  "pinecone_written": false,
+  "created_at": "2026-08-17T15:58:37.378370+00:00"
+}

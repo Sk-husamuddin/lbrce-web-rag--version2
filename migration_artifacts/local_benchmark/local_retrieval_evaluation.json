@@ -1,0 +1,268 @@
+{
+  "model": "BAAI/bge-large-en-v1.5",
+  "dimension": 1024,
+  "chunk_count": 59,
+  "query_count": 12,
+  "passes": 12,
+  "reviews": 0,
+  "failures": 0,
+  "pinecone_written": false,
+  "results": [
+    {
+      "id": "location",
+      "query": "Where is LBRCE located?",
+      "eligible_chunk_count": 2,
+      "expected_url_contains": "overview.php",
+      "matched_rank": 1,
+      "status": "PASS",
+      "top": [
+        {
+          "score": 0.639702,
+          "url": "https://www.lbrce.ac.in/overview.php",
+          "page_category": "college_profile",
+          "topic": "college_profile",
+          "department": null,
+          "chunk_index": 0
+        },
+        {
+          "score": 0.639702,
+          "url": "https://www.lbrce.ac.in/",
+          "page_category": "college_profile",
+          "topic": "college_profile",
+          "department": null,
+          "chunk_index": 0
+        }
+      ]
+    },
+    {
+      "id": "placement",
+      "query": "Show the latest 2025-26 placement statistics and total placements",
+      "eligible_chunk_count": 1,
+      "expected_url_contains": "stat2526.php",
+      "matched_rank": 1,
+      "status": "PASS",
+      "top": [
+        {
+          "score": 0.757183,
+          "url": "https://www.lbrce.ac.in/placements/stat2526.php",
+          "page_category": "placement",
+          "topic": "placement_statistics",
+          "department": null,
+          "chunk_index": 0
+        }
+      ]
+    },
+    {
+      "id": "admission",
+      "query": "How do I get admission into LBRCE?",
+      "eligible_chunk_count": 1,
+      "expected_url_contains": "admissions.php",
+      "matched_rank": 1,
+      "status": "PASS",
+      "top": [
+        {
+          "score": 0.686817,
+          "url": "https://lbrce.ac.in/admission_pages/admissions.php",
+          "page_category": "admission",
+          "topic": "admission_procedure",
+          "department": null,
+          "chunk_index": 0
+        }
+      ]
+    },
+    {
+      "id": "cse_hod",
+      "query": "Who is the current HOD of CSE?",
+      "eligible_chunk_count": 1,
+      "expected_url_contains": "csecontact.php",
+      "matched_rank": 1,
+      "status": "PASS",
+      "top": [
+        {
+          "score": 0.670548,
+          "url": "https://lbrce.ac.in/cse/csecontact.php",
+          "page_category": "department_contact",
+          "topic": "department_contact",
+          "department": "cse",
+          "chunk_index": 0
+        }
+      ]
+    },
+    {
+      "id": "ece_hod",
+      "query": "Who is the current HOD of ECE?",
+      "eligible_chunk_count": 1,
+      "expected_url_contains": "ececontact.php",
+      "matched_rank": 1,
+      "status": "PASS",
+      "top": [
+        {
+          "score": 0.644347,
+          "url": "https://lbrce.ac.in/ece/ececontact.php",
+          "page_category": "department_contact",
+          "topic": "department_contact",
+          "department": "ece",
+          "chunk_index": 0
+        }
+      ]
+    },
+    {
+      "id": "library",
+      "query": "What facilities and resources are available in the LBRCE central library?",
+      "eligible_chunk_count": 1,
+      "expected_url_contains": "central_library.php",
+      "matched_rank": 1,
+      "status": "PASS",
+      "top": [
+        {
+          "score": 0.586286,
+          "url": "https://lbrce.ac.in/studentcorner_pages/central_library.php",
+          "page_category": "facility",
+          "topic": "library",
+          "department": null,
+          "chunk_index": 0
+        }
+      ]
+    },
+    {
+      "id": "hostel",
+      "query": "Does LBRCE provide boys and girls hostel facilities?",
+      "eligible_chunk_count": 1,
+      "expected_url_contains": "hostels.php",
+      "matched_rank": 1,
+      "status": "PASS",
+      "top": [
+        {
+          "score": 0.639274,
+          "url": "https://lbrce.ac.in/studentcorner_pages/hostels.php",
+          "page_category": "facility",
+          "topic": "hostel",
+          "department": null,
+          "chunk_index": 0
+        }
+      ]
+    },
+    {
+      "id": "cse_timetable",
+      "query": "Where can I find the official CSE timetable resources?",
+      "eligible_chunk_count": 1,
+      "expected_url_contains": "csetimetables.php",
+      "matched_rank": 1,
+      "status": "PASS",
+      "top": [
+        {
+          "score": 0.731074,
+          "url": "https://www.lbrce.ac.in/cse/csetimetables.php",
+          "page_category": "timetable_directory",
+          "topic": "timetable_directory",
+          "department": "cse",
+          "chunk_index": 0
+        }
+      ]
+    },
+    {
+      "id": "cse_students",
+      "query": "Show the official CSE student list page",
+      "eligible_chunk_count": 18,
+      "expected_url_contains": "csestudentslist.php",
+      "matched_rank": 1,
+      "status": "PASS",
+      "top": [
+        {
+          "score": 0.689947,
+          "url": "https://www.lbrce.ac.in/cse/csestudentslist.php",
+          "page_category": "student_list",
+          "topic": "student_list",
+          "department": "cse",
+          "chunk_index": 0
+        },
+        {
+          "score": 0.616673,
+          "url": "https://www.lbrce.ac.in/cse/csestudentslist.php",
+          "page_category": "student_list",
+          "topic": "student_list",
+          "department": "cse",
+          "chunk_index": 13
+        },
+        {
+          "score": 0.597424,
+          "url": "https://www.lbrce.ac.in/cse/csestudentslist.php",
+          "page_category": "student_list",
+          "topic": "student_list",
+          "department": "cse",
+          "chunk_index": 17
+        }
+      ]
+    },
+    {
+      "id": "regulations",
+      "query": "Where are the official LBRCE academic regulations published?",
+      "eligible_chunk_count": 1,
+      "expected_url_contains": "acadregulations.php",
+      "matched_rank": 1,
+      "status": "PASS",
+      "top": [
+        {
+          "score": 0.641577,
+          "url": "https://www.lbrce.ac.in/academic_pages/acadregulations.php",
+          "page_category": "regulation_directory",
+          "topic": "regulation_directory",
+          "department": null,
+          "chunk_index": 0
+        }
+      ]
+    },
+    {
+      "id": "programs",
+      "query": "What B.Tech and M.Tech programs does LBRCE offer?",
+      "eligible_chunk_count": 1,
+      "expected_url_contains": "course_structure.php",
+      "matched_rank": 1,
+      "status": "PASS",
+      "top": [
+        {
+          "score": 0.661762,
+          "url": "https://www.lbrce.ac.in/academic_pages/course_structure.php",
+          "page_category": "academic_programs",
+          "topic": "academic_programs",
+          "department": null,
+          "chunk_index": 0
+        }
+      ]
+    },
+    {
+      "id": "cse_department",
+      "query": "Tell me about the official CSE department page",
+      "eligible_chunk_count": 4,
+      "expected_url_contains": "/cse",
+      "matched_rank": 1,
+      "status": "PASS",
+      "top": [
+        {
+          "score": 0.644687,
+          "url": "https://www.lbrce.ac.in/cse/",
+          "page_category": "department_home",
+          "topic": "department_home",
+          "department": "cse",
+          "chunk_index": 2
+        },
+        {
+          "score": 0.637762,
+          "url": "https://www.lbrce.ac.in/cse/",
+          "page_category": "department_home",
+          "topic": "department_home",
+          "department": "cse",
+          "chunk_index": 0
+        },
+        {
+          "score": 0.603707,
+          "url": "https://www.lbrce.ac.in/cse/",
+          "page_category": "department_home",
+          "topic": "department_home",
+          "department": "cse",
+          "chunk_index": 1
+        }
+      ]
+    }
+  ]
+}

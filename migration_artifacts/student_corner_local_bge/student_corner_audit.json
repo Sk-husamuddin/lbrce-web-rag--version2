@@ -1,0 +1,8 @@
+{
+  "page_count": 10,
+  "chunk_count": 25,
+  "failure_count": 0,
+  "failures": [],
+  "pinecone_written": false,
+  "ready_for_embedding": true
+}

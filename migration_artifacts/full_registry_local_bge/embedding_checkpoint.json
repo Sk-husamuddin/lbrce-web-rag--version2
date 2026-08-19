@@ -1,0 +1,8 @@
+{
+  "model": "BAAI/bge-large-en-v1.5",
+  "dimension": 1024,
+  "completed_chunks": 473,
+  "total_chunks": 473,
+  "updated_at": "2026-08-17T15:58:37.372372+00:00",
+  "pinecone_written": false
+}

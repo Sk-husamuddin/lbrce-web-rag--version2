@@ -1,0 +1,54 @@
+{
+  "manifest_name": "LBRCE R23 Academic Regulations",
+  "manifest_version": 1,
+  "source_page": "https://www.lbrce.ac.in/academic_pages/acadregulations.php",
+  "scope": {
+    "regulation": "R23",
+    "document_type": "academic_regulations",
+    "selection_policy": "Only the four PDFs listed under the official LBRCE R23 Regulations section are included."
+  },
+  "timetables": [],
+  "pdfs": [
+    {
+      "title": "LBRCE R23 B.Tech Regulations",
+      "regulation": "R23",
+      "document_type": "academic_regulations",
+      "resource_type": "regulation_pdf",
+      "approved": true,
+      "url": "https://www.lbrce.ac.in/academics/regulations/R23_BTECH_REGULATIONS.pdf",
+      "source_url": "https://www.lbrce.ac.in/academic_pages/acadregulations.php",
+      "url_only": true
+    },
+    {
+      "title": "LBRCE R23 M.Tech Regulations",
+      "regulation": "R23",
+      "document_type": "academic_regulations",
+      "resource_type": "regulation_pdf",
+      "approved": true,
+      "url": "https://www.lbrce.ac.in/academics/regulations/R23_MTECH_REGULATIONS.pdf",
+      "source_url": "https://www.lbrce.ac.in/academic_pages/acadregulations.php",
+      "url_only": true
+    },
+    {
+      "title": "LBRCE R23 MBA Regulations",
+      "regulation": "R23",
+      "document_type": "academic_regulations",
+      "resource_type": "regulation_pdf",
+      "approved": true,
+      "url": "https://www.lbrce.ac.in/academics/regulations/R23_MBA_REGULATIONS.pdf",
+      "source_url": "https://www.lbrce.ac.in/academic_pages/acadregulations.php",
+      "url_only": true
+    },
+    {
+      "title": "LBRCE R23 Honors and Minors Regulations",
+      "regulation": "R23",
+      "document_type": "academic_regulations",
+      "resource_type": "regulation_pdf",
+      "approved": true,
+      "url": "https://www.lbrce.ac.in/academics/regulations/R23_HONORS_MINORS_REGULATIONS.pdf",
+      "source_url": "https://www.lbrce.ac.in/academic_pages/acadregulations.php",
+      "url_only": true
+    }
+  ],
+  "url_first_pdf_policy": true
+}

@@ -1,0 +1,11 @@
+{
+  "created_at": "2026-08-17T14:44:32.622963+00:00",
+  "model": "BAAI/bge-large-en-v1.5",
+  "dimension": 1024,
+  "page_count": 20,
+  "chunk_count": 59,
+  "category_matches": 20,
+  "category_mismatches": [],
+  "vector_file": "benchmark_vectors.npy",
+  "pinecone_written": false
+}

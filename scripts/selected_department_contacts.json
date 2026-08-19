@@ -1,0 +1,59 @@
+{
+  "scope": {
+    "resource_type": "department_contact_page",
+    "purpose": "current_hod_retrieval",
+    "source_domain": "lbrce.ac.in"
+  },
+  "pages": [
+    {
+      "department": "cse",
+      "title": "CSE Department Contact",
+      "url": "https://lbrce.ac.in/cse/csecontact.php"
+    },
+    {
+      "department": "ece",
+      "title": "ECE Department Contact",
+      "url": "https://lbrce.ac.in/ece/ececontact.php"
+    },
+    {
+      "department": "eee",
+      "title": "EEE Department Contact",
+      "url": "https://lbrce.ac.in/eee/eeecontact.php"
+    },
+    {
+      "department": "civil",
+      "title": "Civil Engineering Department Contact",
+      "url": "https://lbrce.ac.in/civil/civilcontact.php"
+    },
+    {
+      "department": "it",
+      "title": "IT Department Contact",
+      "url": "https://lbrce.ac.in/it/itcontact.php"
+    },
+    {
+      "department": "mech",
+      "title": "Mechanical Engineering Department Contact",
+      "url": "https://lbrce.ac.in/mech/mechcontact.php"
+    },
+    {
+      "department": "ase",
+      "title": "Aerospace Engineering Department Contact",
+      "url": "https://lbrce.ac.in/ase/asecontact.php"
+    },
+    {
+      "department": "ai",
+      "title": "AI and Data Science Department Contact",
+      "url": "https://lbrce.ac.in/ai/aicontact.php"
+    },
+    {
+      "department": "csm",
+      "title": "CSE AI and ML Department Contact",
+      "url": "https://lbrce.ac.in/csm/csmcontact.php"
+    },
+    {
+      "department": "mba",
+      "title": "MBA Department Contact",
+      "url": "https://lbrce.ac.in/mba/mbacontact.php"
+    }
+  ]
+}

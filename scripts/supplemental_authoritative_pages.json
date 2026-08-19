@@ -1,0 +1,174 @@
+{
+  "description": "Authoritative LBRCE pages missing or insufficiently represented in the 473-vector full registry. These records use explicit URL-first metadata and are intended for incremental local-BGE migration.",
+  "resource_type": "html_page",
+  "pages": [
+    {
+      "id": "supp-overview",
+      "url": "https://www.lbrce.ac.in/overview.php",
+      "title": "LBRCE Overview and How to Reach",
+      "page_category": "college_profile",
+      "topic": "college_location",
+      "department": null
+    },
+    {
+      "id": "supp-admissions",
+      "url": "https://lbrce.ac.in/admission_pages/admissions.php",
+      "title": "LBRCE Admission Procedure",
+      "page_category": "admission",
+      "topic": "admission_procedure_official",
+      "department": null
+    },
+    {
+      "id": "supp-course-structure",
+      "url": "https://www.lbrce.ac.in/academic_pages/course_structure.php",
+      "title": "LBRCE Course Structure and Programs",
+      "page_category": "academic_programs",
+      "topic": "programs",
+      "department": null
+    },
+    {
+      "id": "supp-regulations",
+      "url": "https://www.lbrce.ac.in/academic_pages/acadregulations.php",
+      "title": "LBRCE Academic Regulations",
+      "page_category": "regulation_directory",
+      "topic": "regulations",
+      "department": null
+    },
+    {
+      "id": "supp-timetable-directory",
+      "url": "https://lbrce.ac.in/academic_pages/timetables.php",
+      "title": "LBRCE Academic Timetable Directory",
+      "page_category": "timetable_directory",
+      "topic": "timetable_directory",
+      "department": null
+    },
+    {
+      "id": "supp-student-directory",
+      "url": "https://lbrce.ac.in/academic_pages/studentslist.php",
+      "title": "LBRCE Student List Directory",
+      "page_category": "student_list",
+      "topic": "student_list",
+      "department": null
+    },
+    {
+      "id": "supp-central-library",
+      "url": "https://lbrce.ac.in/studentcorner_pages/central_library.php",
+      "title": "LBRCE Central Library",
+      "page_category": "facility",
+      "topic": "central_library",
+      "department": null
+    },
+    {
+      "id": "supp-hostels",
+      "url": "https://lbrce.ac.in/studentcorner_pages/hostels.php",
+      "title": "LBRCE Hostel Facilities",
+      "page_category": "facility",
+      "topic": "hostel",
+      "department": null
+    },
+    {
+      "id": "supp-cse-contact",
+      "url": "https://lbrce.ac.in/cse/csecontact.php",
+      "title": "CSE Department Contact",
+      "page_category": "department_contact",
+      "topic": "current_hod",
+      "department": "cse"
+    },
+    {
+      "id": "supp-ece-contact",
+      "url": "https://lbrce.ac.in/ece/ececontact.php",
+      "title": "ECE Department Contact",
+      "page_category": "department_contact",
+      "topic": "current_hod",
+      "department": "ece"
+    },
+    {
+      "id": "supp-eee-contact",
+      "url": "https://lbrce.ac.in/eee/eeecontact.php",
+      "title": "EEE Department Contact",
+      "page_category": "department_contact",
+      "topic": "current_hod",
+      "department": "eee"
+    },
+    {
+      "id": "supp-civil-contact",
+      "url": "https://lbrce.ac.in/civil/civilcontact.php",
+      "title": "Civil Engineering Department Contact",
+      "page_category": "department_contact",
+      "topic": "current_hod",
+      "department": "civil"
+    },
+    {
+      "id": "supp-it-contact",
+      "url": "https://lbrce.ac.in/it/itcontact.php",
+      "title": "IT Department Contact",
+      "page_category": "department_contact",
+      "topic": "current_hod",
+      "department": "it"
+    },
+    {
+      "id": "supp-mech-contact",
+      "url": "https://lbrce.ac.in/mech/mechcontact.php",
+      "title": "Mechanical Engineering Department Contact",
+      "page_category": "department_contact",
+      "topic": "current_hod",
+      "department": "mech"
+    },
+    {
+      "id": "supp-ase-contact",
+      "url": "https://lbrce.ac.in/ase/asecontact.php",
+      "title": "Aerospace Engineering Department Contact",
+      "page_category": "department_contact",
+      "topic": "current_hod",
+      "department": "ase"
+    },
+    {
+      "id": "supp-ai-contact",
+      "url": "https://lbrce.ac.in/ai/aicontact.php",
+      "title": "AI and Data Science Department Contact",
+      "page_category": "department_contact",
+      "topic": "current_hod",
+      "department": "ai"
+    },
+    {
+      "id": "supp-csm-contact",
+      "url": "https://lbrce.ac.in/csm/csmcontact.php",
+      "title": "CSE AI and ML Department Contact",
+      "page_category": "department_contact",
+      "topic": "current_hod",
+      "department": "csm"
+    },
+    {
+      "id": "supp-mba-contact",
+      "url": "https://lbrce.ac.in/mba/mbacontact.php",
+      "title": "MBA Department Contact",
+      "page_category": "department_contact",
+      "topic": "current_hod",
+      "department": "mba"
+    },
+    {
+      "id": "supp-cse-home",
+      "url": "https://www.lbrce.ac.in/cse/",
+      "title": "CSE Department Home",
+      "page_category": "department_home",
+      "topic": "department_home",
+      "department": "cse"
+    },
+    {
+      "id": "supp-ece-home",
+      "url": "https://www.lbrce.ac.in/ece/",
+      "title": "ECE Department Home",
+      "page_category": "department_home",
+      "topic": "department_home",
+      "department": "ece"
+    },
+    {
+      "id": "supp-transportation",
+      "url": "https://www.lbrce.ac.in/studentcorner_pages/transportation.php",
+      "title": "LBRCE College Transportation, Bus Routes and Bus Fares",
+      "page_category": "transportation",
+      "topic": "transportation",
+      "department": null
+    }
+  ]
+}

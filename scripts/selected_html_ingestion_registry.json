@@ -1,0 +1,116 @@
+{
+  "https://www.lbrce.ac.in/placements/pstatistics.php": {
+    "status": "success",
+    "title": "LBRCE Placement Statistics",
+    "chunk_count": 1,
+    "updated_at": "2026-08-16T16:33:29.999611+00:00"
+  },
+  "https://www.lbrce.ac.in/placements/stat2526.php": {
+    "status": "success",
+    "title": "LBRCE Placements 2025-26",
+    "chunk_count": 2,
+    "updated_at": "2026-08-16T16:33:32.476236+00:00"
+  },
+  "https://www.lbrce.ac.in/placements/stat2425.php": {
+    "status": "success",
+    "title": "LBRCE Placements 2024-25",
+    "chunk_count": 2,
+    "updated_at": "2026-08-16T16:33:34.393133+00:00"
+  },
+  "https://www.lbrce.ac.in/placements/stat2324.php": {
+    "status": "success",
+    "title": "LBRCE Placements 2023-24",
+    "chunk_count": 2,
+    "updated_at": "2026-08-16T16:33:36.292088+00:00"
+  },
+  "https://www.lbrce.ac.in/placements/stat2223.php": {
+    "status": "success",
+    "title": "LBRCE Placements 2022-23",
+    "chunk_count": 2,
+    "updated_at": "2026-08-16T16:33:38.174166+00:00"
+  },
+  "https://www.lbrce.ac.in/placements/stat2122.php": {
+    "status": "success",
+    "title": "LBRCE Placements 2021-22",
+    "chunk_count": 2,
+    "updated_at": "2026-08-16T16:33:40.133209+00:00"
+  },
+  "https://www.lbrce.ac.in/placements/stat2021.php": {
+    "status": "success",
+    "title": "LBRCE Placements 2020-21",
+    "chunk_count": 2,
+    "updated_at": "2026-08-16T16:33:42.330777+00:00"
+  },
+  "https://www.lbrce.ac.in/placements/stat1920.php": {
+    "status": "success",
+    "title": "LBRCE Placements 2019-20",
+    "chunk_count": 2,
+    "updated_at": "2026-08-16T16:33:44.318451+00:00"
+  },
+  "https://www.lbrce.ac.in/placements/stat1819.php": {
+    "status": "success",
+    "title": "LBRCE Placements 2018-19",
+    "chunk_count": 3,
+    "updated_at": "2026-08-16T16:33:46.283738+00:00"
+  },
+  "https://www.lbrce.ac.in/placements/stat1718.php": {
+    "status": "success",
+    "title": "LBRCE Placements 2017-18",
+    "chunk_count": 2,
+    "updated_at": "2026-08-16T16:33:48.141039+00:00"
+  },
+  "https://www.lbrce.ac.in/placements/stat1617.php": {
+    "status": "success",
+    "title": "LBRCE Placements 2016-17",
+    "chunk_count": 1,
+    "updated_at": "2026-08-16T16:33:50.026808+00:00"
+  },
+  "https://www.lbrce.ac.in/placements/stat1516.php": {
+    "status": "success",
+    "title": "LBRCE Placements 2015-16",
+    "chunk_count": 1,
+    "updated_at": "2026-08-16T16:33:52.134330+00:00"
+  },
+  "https://www.lbrce.ac.in/overview.php": {
+    "status": "success",
+    "title": "LBRCE Overview and How to Reach",
+    "chunk_count": 2,
+    "updated_at": "2026-08-17T00:49:42.645692+00:00"
+  },
+  "https://www.lbrce.ac.in": {
+    "status": "success",
+    "title": "LBRCE Home and How to Reach",
+    "chunk_count": 1,
+    "updated_at": "2026-08-17T00:49:45.269691+00:00"
+  },
+  "https://lbrce.ac.in/admission_pages/admissions.php": {
+    "status": "success",
+    "title": "LBRCE Admission Procedure",
+    "chunk_count": 1,
+    "updated_at": "2026-08-17T00:59:20.967238+00:00"
+  },
+  "https://lbrce.ac.in/admission_pages/courses.php": {
+    "status": "success",
+    "title": "LBRCE Programmes Offered",
+    "chunk_count": 1,
+    "updated_at": "2026-08-17T00:59:22.954015+00:00"
+  },
+  "https://lbrce.ac.in/admission_pages/feestructure.php": {
+    "status": "success",
+    "title": "LBRCE Fee Structure",
+    "chunk_count": 1,
+    "updated_at": "2026-08-17T00:59:24.994179+00:00"
+  },
+  "https://lbrce.ac.in/admission_pages/lastrank.php": {
+    "status": "success",
+    "title": "LBRCE Course Wise Last Ranks",
+    "chunk_count": 8,
+    "updated_at": "2026-08-17T00:59:28.015417+00:00"
+  },
+  "https://lbrce.ac.in/admission_pages/CatBNonNRISpotSeats.php": {
+    "status": "success",
+    "title": "LBRCE Category B and NRI Admissions",
+    "chunk_count": 1,
+    "updated_at": "2026-08-17T00:59:29.629354+00:00"
+  }
+}

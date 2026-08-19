@@ -1,0 +1,750 @@
+{
+  "registry_entries": 487,
+  "unique_canonical_pages": 311,
+  "fetched_pages": 311,
+  "duplicate_alias_groups": {
+    "https://lbrce.ac.in/admission_pages/catbnriseats.php": [
+      "https://lbrce.ac.in/admission_pages/catbnriseats.php",
+      "https://www.lbrce.ac.in/admission_pages/catbnriseats.php"
+    ],
+    "https://lbrce.ac.in/advanced_labs/eyantra.php": [
+      "https://lbrce.ac.in/advanced_labs/eyantra.php",
+      "https://www.lbrce.ac.in/advanced_labs/eyantra.php"
+    ],
+    "https://lbrce.ac.in/advanced_labs/getc.php": [
+      "https://lbrce.ac.in/advanced_labs/getc.php",
+      "https://www.lbrce.ac.in/advanced_labs/getc.php"
+    ],
+    "https://lbrce.ac.in/advanced_labs/labview.php": [
+      "https://lbrce.ac.in/advanced_labs/labview.php",
+      "https://www.lbrce.ac.in/advanced_labs/labview.php"
+    ],
+    "https://lbrce.ac.in/advanced_labs/mems.php": [
+      "https://lbrce.ac.in/advanced_labs/mems.php",
+      "https://www.lbrce.ac.in/advanced_labs/mems.php"
+    ],
+    "https://lbrce.ac.in/advanced_labs/sdc.php": [
+      "https://lbrce.ac.in/advanced_labs/sdc.php",
+      "https://www.lbrce.ac.in/advanced_labs/sdc.php"
+    ],
+    "https://lbrce.ac.in/ase/ase_certifications.php": [
+      "https://lbrce.ac.in/ase/ase_certifications.php",
+      "https://www.lbrce.ac.in/ase/ase_certifications.php"
+    ],
+    "https://lbrce.ac.in/ase/aseacadcalendars.php": [
+      "https://lbrce.ac.in/ase/aseacadcalendars.php",
+      "https://www.lbrce.ac.in/ase/aseacadcalendars.php"
+    ],
+    "https://lbrce.ac.in/ase/asealumni.php": [
+      "https://lbrce.ac.in/ase/asealumni.php",
+      "https://www.lbrce.ac.in/ase/asealumni.php"
+    ],
+    "https://lbrce.ac.in/ase/aseassociation.php": [
+      "https://lbrce.ac.in/ase/aseassociation.php",
+      "https://www.lbrce.ac.in/ase/aseassociation.php"
+    ],
+    "https://lbrce.ac.in/ase/aseclub.php": [
+      "https://lbrce.ac.in/ase/aseclub.php",
+      "https://www.lbrce.ac.in/ase/aseclub.php"
+    ],
+    "https://lbrce.ac.in/ase/asecocurricular.php": [
+      "https://lbrce.ac.in/ase/asecocurricular.php",
+      "https://www.lbrce.ac.in/ase/asecocurricular.php"
+    ],
+    "https://lbrce.ac.in/ase/asecourse_syllabus.php": [
+      "https://lbrce.ac.in/ase/asecourse_syllabus.php",
+      "https://www.lbrce.ac.in/ase/asecourse_syllabus.php"
+    ],
+    "https://lbrce.ac.in/ase/aseculturals.php": [
+      "https://lbrce.ac.in/ase/aseculturals.php",
+      "https://www.lbrce.ac.in/ase/aseculturals.php"
+    ],
+    "https://lbrce.ac.in/ase/asedeptlibrary.php": [
+      "https://lbrce.ac.in/ase/asedeptlibrary.php",
+      "https://www.lbrce.ac.in/ase/asedeptlibrary.php"
+    ],
+    "https://lbrce.ac.in/ase/aseextracurricular.php": [
+      "https://lbrce.ac.in/ase/aseextracurricular.php",
+      "https://www.lbrce.ac.in/ase/aseextracurricular.php"
+    ],
+    "https://lbrce.ac.in/ase/asefac_achievements.php": [
+      "https://lbrce.ac.in/ase/asefac_achievements.php",
+      "https://www.lbrce.ac.in/ase/asefac_achievements.php"
+    ],
+    "https://lbrce.ac.in/ase/asehighereducation.php": [
+      "https://lbrce.ac.in/ase/asehighereducation.php",
+      "https://www.lbrce.ac.in/ase/asehighereducation.php"
+    ],
+    "https://lbrce.ac.in/ase/aseinternships.php": [
+      "https://lbrce.ac.in/ase/aseinternships.php",
+      "https://www.lbrce.ac.in/ase/aseinternships.php"
+    ],
+    "https://lbrce.ac.in/ase/aselessonplans.php": [
+      "https://lbrce.ac.in/ase/aselessonplans.php",
+      "https://www.lbrce.ac.in/ase/aselessonplans.php"
+    ],
+    "https://lbrce.ac.in/ase/asememberships.php": [
+      "https://lbrce.ac.in/ase/asememberships.php",
+      "https://www.lbrce.ac.in/ase/asememberships.php"
+    ],
+    "https://lbrce.ac.in/ase/asementors.php": [
+      "https://lbrce.ac.in/ase/asementors.php",
+      "https://www.lbrce.ac.in/ase/asementors.php"
+    ],
+    "https://lbrce.ac.in/ase/asencc.php": [
+      "https://lbrce.ac.in/ase/asencc.php",
+      "https://www.lbrce.ac.in/ase/asencc.php"
+    ],
+    "https://lbrce.ac.in/ase/aseplacements.php": [
+      "https://lbrce.ac.in/ase/aseplacements.php",
+      "https://www.lbrce.ac.in/ase/aseplacements.php"
+    ],
+    "https://lbrce.ac.in/ase/asestudachievements.php": [
+      "https://lbrce.ac.in/ase/asestudachievements.php",
+      "https://www.lbrce.ac.in/ase/asestudachievements.php"
+    ],
+    "https://lbrce.ac.in/ase/asestudents.php": [
+      "https://lbrce.ac.in/ase/asestudents.php",
+      "https://www.lbrce.ac.in/ase/asestudents.php"
+    ],
+    "https://lbrce.ac.in/ase/asestudentslist.php": [
+      "https://lbrce.ac.in/ase/asestudentslist.php",
+      "https://www.lbrce.ac.in/ase/asestudentslist.php"
+    ],
+    "https://lbrce.ac.in/ase/asestudprojects.php": [
+      "https://lbrce.ac.in/ase/asestudprojects.php",
+      "https://www.lbrce.ac.in/ase/asestudprojects.php"
+    ],
+    "https://lbrce.ac.in/ase/asestudpublications.php": [
+      "https://lbrce.ac.in/ase/asestudpublications.php",
+      "https://www.lbrce.ac.in/ase/asestudpublications.php"
+    ],
+    "https://lbrce.ac.in/ase/asetimetables.php": [
+      "https://lbrce.ac.in/ase/asetimetables.php",
+      "https://www.lbrce.ac.in/ase/asetimetables.php"
+    ],
+    "https://lbrce.ac.in/ase/index.php": [
+      "https://lbrce.ac.in/ase/index.php",
+      "https://www.lbrce.ac.in/ase/index.php"
+    ],
+    "https://lbrce.ac.in/bulletinboard.php": [
+      "https://lbrce.ac.in/bulletinboard.php",
+      "https://www.lbrce.ac.in/bulletinboard.php"
+    ],
+    "https://lbrce.ac.in/civil/civil_certifications.php": [
+      "https://lbrce.ac.in/civil/civil_certifications.php",
+      "https://www.lbrce.ac.in/civil/civil_certifications.php"
+    ],
+    "https://lbrce.ac.in/civil/civilacadcalendars.php": [
+      "https://lbrce.ac.in/civil/civilacadcalendars.php",
+      "https://www.lbrce.ac.in/civil/civilacadcalendars.php"
+    ],
+    "https://lbrce.ac.in/civil/civilalumni.php": [
+      "https://lbrce.ac.in/civil/civilalumni.php",
+      "https://www.lbrce.ac.in/civil/civilalumni.php"
+    ],
+    "https://lbrce.ac.in/civil/civilcocurricular.php": [
+      "https://lbrce.ac.in/civil/civilcocurricular.php",
+      "https://www.lbrce.ac.in/civil/civilcocurricular.php"
+    ],
+    "https://lbrce.ac.in/civil/civilcourse_syllabus.php": [
+      "https://lbrce.ac.in/civil/civilcourse_syllabus.php",
+      "https://www.lbrce.ac.in/civil/civilcourse_syllabus.php"
+    ],
+    "https://lbrce.ac.in/civil/civilculturals.php": [
+      "https://lbrce.ac.in/civil/civilculturals.php",
+      "https://www.lbrce.ac.in/civil/civilculturals.php"
+    ],
+    "https://lbrce.ac.in/civil/civildeptlibrary.php": [
+      "https://lbrce.ac.in/civil/civildeptlibrary.php",
+      "https://www.lbrce.ac.in/civil/civildeptlibrary.php"
+    ],
+    "https://lbrce.ac.in/civil/civilextracurricular.php": [
+      "https://lbrce.ac.in/civil/civilextracurricular.php",
+      "https://www.lbrce.ac.in/civil/civilextracurricular.php"
+    ],
+    "https://lbrce.ac.in/civil/civilfac_achievements.php": [
+      "https://lbrce.ac.in/civil/civilfac_achievements.php",
+      "https://www.lbrce.ac.in/civil/civilfac_achievements.php"
+    ],
+    "https://lbrce.ac.in/civil/civilhighereducation.php": [
+      "https://lbrce.ac.in/civil/civilhighereducation.php",
+      "https://www.lbrce.ac.in/civil/civilhighereducation.php"
+    ],
+    "https://lbrce.ac.in/civil/civilinternships.php": [
+      "https://lbrce.ac.in/civil/civilinternships.php",
+      "https://www.lbrce.ac.in/civil/civilinternships.php"
+    ],
+    "https://lbrce.ac.in/civil/civillessonplans.php": [
+      "https://lbrce.ac.in/civil/civillessonplans.php",
+      "https://www.lbrce.ac.in/civil/civillessonplans.php"
+    ],
+    "https://lbrce.ac.in/civil/civilmemberships.php": [
+      "https://lbrce.ac.in/civil/civilmemberships.php",
+      "https://www.lbrce.ac.in/civil/civilmemberships.php"
+    ],
+    "https://lbrce.ac.in/civil/civilmentors.php": [
+      "https://lbrce.ac.in/civil/civilmentors.php",
+      "https://www.lbrce.ac.in/civil/civilmentors.php"
+    ],
+    "https://lbrce.ac.in/civil/civilncc.php": [
+      "https://lbrce.ac.in/civil/civilncc.php",
+      "https://www.lbrce.ac.in/civil/civilncc.php"
+    ],
+    "https://lbrce.ac.in/civil/civilplacements.php": [
+      "https://lbrce.ac.in/civil/civilplacements.php",
+      "https://www.lbrce.ac.in/civil/civilplacements.php"
+    ],
+    "https://lbrce.ac.in/civil/civilstudachievements.php": [
+      "https://lbrce.ac.in/civil/civilstudachievements.php",
+      "https://www.lbrce.ac.in/civil/civilstudachievements.php"
+    ],
+    "https://lbrce.ac.in/civil/civilstudentchapteriei.php": [
+      "https://lbrce.ac.in/civil/civilstudentchapteriei.php",
+      "https://www.lbrce.ac.in/civil/civilstudentchapteriei.php"
+    ],
+    "https://lbrce.ac.in/civil/civilstudents.php": [
+      "https://lbrce.ac.in/civil/civilstudents.php",
+      "https://www.lbrce.ac.in/civil/civilstudents.php"
+    ],
+    "https://lbrce.ac.in/civil/civilstudentslist.php": [
+      "https://lbrce.ac.in/civil/civilstudentslist.php",
+      "https://www.lbrce.ac.in/civil/civilstudentslist.php"
+    ],
+    "https://lbrce.ac.in/civil/civilstudprojects.php": [
+      "https://lbrce.ac.in/civil/civilstudprojects.php",
+      "https://www.lbrce.ac.in/civil/civilstudprojects.php"
+    ],
+    "https://lbrce.ac.in/civil/civilstudpublications.php": [
+      "https://lbrce.ac.in/civil/civilstudpublications.php",
+      "https://www.lbrce.ac.in/civil/civilstudpublications.php"
+    ],
+    "https://lbrce.ac.in/civil/civiltimetables.php": [
+      "https://lbrce.ac.in/civil/civiltimetables.php",
+      "https://www.lbrce.ac.in/civil/civiltimetables.php"
+    ],
+    "https://lbrce.ac.in/civil/civilvaradhiclub.php": [
+      "https://lbrce.ac.in/civil/civilvaradhiclub.php",
+      "https://www.lbrce.ac.in/civil/civilvaradhiclub.php"
+    ],
+    "https://lbrce.ac.in/civil/index.php": [
+      "https://lbrce.ac.in/civil/index.php",
+      "https://www.lbrce.ac.in/civil/index.php"
+    ],
+    "https://lbrce.ac.in/cse/cse_certifications.php": [
+      "https://lbrce.ac.in/cse/cse_certifications.php",
+      "https://www.lbrce.ac.in/cse/cse_certifications.php"
+    ],
+    "https://lbrce.ac.in/cse/cse_cisconetlab.php": [
+      "https://lbrce.ac.in/cse/cse_cisconetlab.php",
+      "https://www.lbrce.ac.in/cse/cse_cisconetlab.php"
+    ],
+    "https://lbrce.ac.in/cse/cse_complab.php": [
+      "https://lbrce.ac.in/cse/cse_complab.php",
+      "https://www.lbrce.ac.in/cse/cse_complab.php"
+    ],
+    "https://lbrce.ac.in/cse/cse_dataanalyticslab.php": [
+      "https://lbrce.ac.in/cse/cse_dataanalyticslab.php",
+      "https://www.lbrce.ac.in/cse/cse_dataanalyticslab.php"
+    ],
+    "https://lbrce.ac.in/cse/cse_dblab.php": [
+      "https://lbrce.ac.in/cse/cse_dblab.php",
+      "https://www.lbrce.ac.in/cse/cse_dblab.php"
+    ],
+    "https://lbrce.ac.in/cse/cse_itwslab.php": [
+      "https://lbrce.ac.in/cse/cse_itwslab.php",
+      "https://www.lbrce.ac.in/cse/cse_itwslab.php"
+    ],
+    "https://lbrce.ac.in/cse/cse_networklab.php": [
+      "https://lbrce.ac.in/cse/cse_networklab.php",
+      "https://www.lbrce.ac.in/cse/cse_networklab.php"
+    ],
+    "https://lbrce.ac.in/cse/cse_softcomplab.php": [
+      "https://lbrce.ac.in/cse/cse_softcomplab.php",
+      "https://www.lbrce.ac.in/cse/cse_softcomplab.php"
+    ],
+    "https://lbrce.ac.in/cse/cse_welab.php": [
+      "https://lbrce.ac.in/cse/cse_welab.php",
+      "https://www.lbrce.ac.in/cse/cse_welab.php"
+    ],
+    "https://lbrce.ac.in/cse/csealumni.php": [
+      "https://lbrce.ac.in/cse/csealumni.php",
+      "https://www.lbrce.ac.in/cse/csealumni.php"
+    ],
+    "https://lbrce.ac.in/cse/csecocurricular.php": [
+      "https://lbrce.ac.in/cse/csecocurricular.php",
+      "https://www.lbrce.ac.in/cse/csecocurricular.php"
+    ],
+    "https://lbrce.ac.in/cse/csecodecrackclub.php": [
+      "https://lbrce.ac.in/cse/csecodecrackclub.php",
+      "https://www.lbrce.ac.in/cse/csecodecrackclub.php"
+    ],
+    "https://lbrce.ac.in/cse/csecourse_syllabus.php": [
+      "https://lbrce.ac.in/cse/csecourse_syllabus.php",
+      "https://www.lbrce.ac.in/cse/csecourse_syllabus.php"
+    ],
+    "https://lbrce.ac.in/cse/cseculturals.php": [
+      "https://lbrce.ac.in/cse/cseculturals.php",
+      "https://www.lbrce.ac.in/cse/cseculturals.php"
+    ],
+    "https://lbrce.ac.in/cse/csedeptlibrary.php": [
+      "https://lbrce.ac.in/cse/csedeptlibrary.php",
+      "https://www.lbrce.ac.in/cse/csedeptlibrary.php"
+    ],
+    "https://lbrce.ac.in/cse/csedic.php": [
+      "https://lbrce.ac.in/cse/csedic.php",
+      "https://www.lbrce.ac.in/cse/csedic.php"
+    ],
+    "https://lbrce.ac.in/cse/cseextracurricular.php": [
+      "https://lbrce.ac.in/cse/cseextracurricular.php",
+      "https://www.lbrce.ac.in/cse/cseextracurricular.php"
+    ],
+    "https://lbrce.ac.in/cse/csefac_achievements.php": [
+      "https://lbrce.ac.in/cse/csefac_achievements.php",
+      "https://www.lbrce.ac.in/cse/csefac_achievements.php"
+    ],
+    "https://lbrce.ac.in/cse/csehighereducation.php": [
+      "https://lbrce.ac.in/cse/csehighereducation.php",
+      "https://www.lbrce.ac.in/cse/csehighereducation.php"
+    ],
+    "https://lbrce.ac.in/cse/cseinternships.php": [
+      "https://lbrce.ac.in/cse/cseinternships.php",
+      "https://www.lbrce.ac.in/cse/cseinternships.php"
+    ],
+    "https://lbrce.ac.in/cse/cselessonplans.php": [
+      "https://lbrce.ac.in/cse/cselessonplans.php",
+      "https://www.lbrce.ac.in/cse/cselessonplans.php"
+    ],
+    "https://lbrce.ac.in/cse/csematerials.php": [
+      "https://lbrce.ac.in/cse/csematerials.php",
+      "https://www.lbrce.ac.in/cse/csematerials.php"
+    ],
+    "https://lbrce.ac.in/cse/csememberships.php": [
+      "https://lbrce.ac.in/cse/csememberships.php",
+      "https://www.lbrce.ac.in/cse/csememberships.php"
+    ],
+    "https://lbrce.ac.in/cse/csementors.php": [
+      "https://lbrce.ac.in/cse/csementors.php",
+      "https://www.lbrce.ac.in/cse/csementors.php"
+    ],
+    "https://lbrce.ac.in/cse/csemlclub.php": [
+      "https://lbrce.ac.in/cse/csemlclub.php",
+      "https://www.lbrce.ac.in/cse/csemlclub.php"
+    ],
+    "https://lbrce.ac.in/cse/csencc.php": [
+      "https://lbrce.ac.in/cse/csencc.php",
+      "https://www.lbrce.ac.in/cse/csencc.php"
+    ],
+    "https://lbrce.ac.in/cse/cseplacements.php": [
+      "https://lbrce.ac.in/cse/cseplacements.php",
+      "https://www.lbrce.ac.in/cse/cseplacements.php"
+    ],
+    "https://lbrce.ac.in/cse/cseqicell.php": [
+      "https://lbrce.ac.in/cse/cseqicell.php",
+      "https://www.lbrce.ac.in/cse/cseqicell.php"
+    ],
+    "https://lbrce.ac.in/cse/cserpaclub.php": [
+      "https://lbrce.ac.in/cse/cserpaclub.php",
+      "https://www.lbrce.ac.in/cse/cserpaclub.php"
+    ],
+    "https://lbrce.ac.in/cse/csestudachievements.php": [
+      "https://lbrce.ac.in/cse/csestudachievements.php",
+      "https://www.lbrce.ac.in/cse/csestudachievements.php"
+    ],
+    "https://lbrce.ac.in/cse/csestudentassocacg.php": [
+      "https://lbrce.ac.in/cse/csestudentassocacg.php",
+      "https://www.lbrce.ac.in/cse/csestudentassocacg.php"
+    ],
+    "https://lbrce.ac.in/cse/csestudentchapteracm.php": [
+      "https://lbrce.ac.in/cse/csestudentchapteracm.php",
+      "https://www.lbrce.ac.in/cse/csestudentchapteracm.php"
+    ],
+    "https://lbrce.ac.in/cse/csestudentchaptercsi.php": [
+      "https://lbrce.ac.in/cse/csestudentchaptercsi.php",
+      "https://www.lbrce.ac.in/cse/csestudentchaptercsi.php"
+    ],
+    "https://lbrce.ac.in/cse/csestudents.php": [
+      "https://lbrce.ac.in/cse/csestudents.php",
+      "https://www.lbrce.ac.in/cse/csestudents.php"
+    ],
+    "https://lbrce.ac.in/cse/csestudentslist.php": [
+      "https://lbrce.ac.in/cse/csestudentslist.php",
+      "https://www.lbrce.ac.in/cse/csestudentslist.php"
+    ],
+    "https://lbrce.ac.in/cse/csestudprojects.php": [
+      "https://lbrce.ac.in/cse/csestudprojects.php",
+      "https://www.lbrce.ac.in/cse/csestudprojects.php"
+    ],
+    "https://lbrce.ac.in/cse/csestudpublications.php": [
+      "https://lbrce.ac.in/cse/csestudpublications.php",
+      "https://www.lbrce.ac.in/cse/csestudpublications.php"
+    ],
+    "https://lbrce.ac.in/cse/csetimetables.php": [
+      "https://lbrce.ac.in/cse/csetimetables.php",
+      "https://www.lbrce.ac.in/cse/csetimetables.php"
+    ],
+    "https://lbrce.ac.in/cse/index.php": [
+      "https://lbrce.ac.in/cse/index.php",
+      "https://www.lbrce.ac.in/cse/index.php"
+    ],
+    "https://lbrce.ac.in/dslab/index.html": [
+      "https://lbrce.ac.in/dslab/index.html",
+      "https://www.lbrce.ac.in/dslab/index.html"
+    ],
+    "https://lbrce.ac.in/ece/ece_certifications.php": [
+      "https://lbrce.ac.in/ece/ece_certifications.php",
+      "https://www.lbrce.ac.in/ece/ece_certifications.php"
+    ],
+    "https://lbrce.ac.in/ece/eceacadcalendars.php": [
+      "https://lbrce.ac.in/ece/eceacadcalendars.php",
+      "https://www.lbrce.ac.in/ece/eceacadcalendars.php"
+    ],
+    "https://lbrce.ac.in/ece/ecealumni.php": [
+      "https://lbrce.ac.in/ece/ecealumni.php",
+      "https://www.lbrce.ac.in/ece/ecealumni.php"
+    ],
+    "https://lbrce.ac.in/ece/ececocurricular.php": [
+      "https://lbrce.ac.in/ece/ececocurricular.php",
+      "https://www.lbrce.ac.in/ece/ececocurricular.php"
+    ],
+    "https://lbrce.ac.in/ece/ececourse_syllabus.php": [
+      "https://lbrce.ac.in/ece/ececourse_syllabus.php",
+      "https://www.lbrce.ac.in/ece/ececourse_syllabus.php"
+    ],
+    "https://lbrce.ac.in/ece/ececulturals.php": [
+      "https://lbrce.ac.in/ece/ececulturals.php",
+      "https://www.lbrce.ac.in/ece/ececulturals.php"
+    ],
+    "https://lbrce.ac.in/ece/ecedeptlibrary.php": [
+      "https://lbrce.ac.in/ece/ecedeptlibrary.php",
+      "https://www.lbrce.ac.in/ece/ecedeptlibrary.php"
+    ],
+    "https://lbrce.ac.in/ece/eceextracurricular.php": [
+      "https://lbrce.ac.in/ece/eceextracurricular.php",
+      "https://www.lbrce.ac.in/ece/eceextracurricular.php"
+    ],
+    "https://lbrce.ac.in/ece/ecefac_achievements.php": [
+      "https://lbrce.ac.in/ece/ecefac_achievements.php",
+      "https://www.lbrce.ac.in/ece/ecefac_achievements.php"
+    ],
+    "https://lbrce.ac.in/ece/ecehighereducation.php": [
+      "https://lbrce.ac.in/ece/ecehighereducation.php",
+      "https://www.lbrce.ac.in/ece/ecehighereducation.php"
+    ],
+    "https://lbrce.ac.in/ece/eceinternships.php": [
+      "https://lbrce.ac.in/ece/eceinternships.php",
+      "https://www.lbrce.ac.in/ece/eceinternships.php"
+    ],
+    "https://lbrce.ac.in/ece/ecelessonplans.php": [
+      "https://lbrce.ac.in/ece/ecelessonplans.php",
+      "https://www.lbrce.ac.in/ece/ecelessonplans.php"
+    ],
+    "https://lbrce.ac.in/ece/ecematerials.php": [
+      "https://lbrce.ac.in/ece/ecematerials.php",
+      "https://www.lbrce.ac.in/ece/ecematerials.php"
+    ],
+    "https://lbrce.ac.in/ece/ecememberships.php": [
+      "https://lbrce.ac.in/ece/ecememberships.php",
+      "https://www.lbrce.ac.in/ece/ecememberships.php"
+    ],
+    "https://lbrce.ac.in/ece/ecementors.php": [
+      "https://lbrce.ac.in/ece/ecementors.php",
+      "https://www.lbrce.ac.in/ece/ecementors.php"
+    ],
+    "https://lbrce.ac.in/ece/ecencc.php": [
+      "https://lbrce.ac.in/ece/ecencc.php",
+      "https://www.lbrce.ac.in/ece/ecencc.php"
+    ],
+    "https://lbrce.ac.in/ece/eceplacements.php": [
+      "https://lbrce.ac.in/ece/eceplacements.php",
+      "https://www.lbrce.ac.in/ece/eceplacements.php"
+    ],
+    "https://lbrce.ac.in/ece/ecercclub.php": [
+      "https://lbrce.ac.in/ece/ecercclub.php",
+      "https://www.lbrce.ac.in/ece/ecercclub.php"
+    ],
+    "https://lbrce.ac.in/ece/ecestudachievements.php": [
+      "https://lbrce.ac.in/ece/ecestudachievements.php",
+      "https://www.lbrce.ac.in/ece/ecestudachievements.php"
+    ],
+    "https://lbrce.ac.in/ece/ecestudentchapteriete.php": [
+      "https://lbrce.ac.in/ece/ecestudentchapteriete.php",
+      "https://www.lbrce.ac.in/ece/ecestudentchapteriete.php"
+    ],
+    "https://lbrce.ac.in/ece/ecestudentchapteriste.php": [
+      "https://lbrce.ac.in/ece/ecestudentchapteriste.php",
+      "https://www.lbrce.ac.in/ece/ecestudentchapteriste.php"
+    ],
+    "https://lbrce.ac.in/ece/ecestudents.php": [
+      "https://lbrce.ac.in/ece/ecestudents.php",
+      "https://www.lbrce.ac.in/ece/ecestudents.php"
+    ],
+    "https://lbrce.ac.in/ece/ecestudentslist.php": [
+      "https://lbrce.ac.in/ece/ecestudentslist.php",
+      "https://www.lbrce.ac.in/ece/ecestudentslist.php"
+    ],
+    "https://lbrce.ac.in/ece/ecestudprojects.php": [
+      "https://lbrce.ac.in/ece/ecestudprojects.php",
+      "https://www.lbrce.ac.in/ece/ecestudprojects.php"
+    ],
+    "https://lbrce.ac.in/ece/ecestudpublications.php": [
+      "https://lbrce.ac.in/ece/ecestudpublications.php",
+      "https://www.lbrce.ac.in/ece/ecestudpublications.php"
+    ],
+    "https://lbrce.ac.in/ece/ecetimetables.php": [
+      "https://lbrce.ac.in/ece/ecetimetables.php",
+      "https://www.lbrce.ac.in/ece/ecetimetables.php"
+    ],
+    "https://lbrce.ac.in/ece/index.php": [
+      "https://lbrce.ac.in/ece/index.php",
+      "https://www.lbrce.ac.in/ece/index.php"
+    ],
+    "https://lbrce.ac.in/eee/eee_certifications.php": [
+      "https://lbrce.ac.in/eee/eee_certifications.php",
+      "https://www.lbrce.ac.in/eee/eee_certifications.php"
+    ],
+    "https://lbrce.ac.in/eee/eeeacadcalendars.php": [
+      "https://lbrce.ac.in/eee/eeeacadcalendars.php",
+      "https://www.lbrce.ac.in/eee/eeeacadcalendars.php"
+    ],
+    "https://lbrce.ac.in/eee/eeeaeelassociation.php": [
+      "https://lbrce.ac.in/eee/eeeaeelassociation.php",
+      "https://www.lbrce.ac.in/eee/eeeaeelassociation.php"
+    ],
+    "https://lbrce.ac.in/eee/eeealumni.php": [
+      "https://lbrce.ac.in/eee/eeealumni.php",
+      "https://www.lbrce.ac.in/eee/eeealumni.php"
+    ],
+    "https://lbrce.ac.in/eee/eeecocurricular.php": [
+      "https://lbrce.ac.in/eee/eeecocurricular.php",
+      "https://www.lbrce.ac.in/eee/eeecocurricular.php"
+    ],
+    "https://lbrce.ac.in/eee/eeecourse_syllabus.php": [
+      "https://lbrce.ac.in/eee/eeecourse_syllabus.php",
+      "https://www.lbrce.ac.in/eee/eeecourse_syllabus.php"
+    ],
+    "https://lbrce.ac.in/eee/eeeculturals.php": [
+      "https://lbrce.ac.in/eee/eeeculturals.php",
+      "https://www.lbrce.ac.in/eee/eeeculturals.php"
+    ],
+    "https://lbrce.ac.in/eee/eeedeptlibrary.php": [
+      "https://lbrce.ac.in/eee/eeedeptlibrary.php",
+      "https://www.lbrce.ac.in/eee/eeedeptlibrary.php"
+    ],
+    "https://lbrce.ac.in/eee/eeeextracurricular.php": [
+      "https://lbrce.ac.in/eee/eeeextracurricular.php",
+      "https://www.lbrce.ac.in/eee/eeeextracurricular.php"
+    ],
+    "https://lbrce.ac.in/eee/eeefac_achievements.php": [
+      "https://lbrce.ac.in/eee/eeefac_achievements.php",
+      "https://www.lbrce.ac.in/eee/eeefac_achievements.php"
+    ],
+    "https://lbrce.ac.in/eee/eeegreenenergyclub.php": [
+      "https://lbrce.ac.in/eee/eeegreenenergyclub.php",
+      "https://www.lbrce.ac.in/eee/eeegreenenergyclub.php"
+    ],
+    "https://lbrce.ac.in/eee/eeehighereducation.php": [
+      "https://lbrce.ac.in/eee/eeehighereducation.php",
+      "https://www.lbrce.ac.in/eee/eeehighereducation.php"
+    ],
+    "https://lbrce.ac.in/eee/eeeinternships.php": [
+      "https://lbrce.ac.in/eee/eeeinternships.php",
+      "https://www.lbrce.ac.in/eee/eeeinternships.php"
+    ],
+    "https://lbrce.ac.in/eee/eeelessonplans.php": [
+      "https://lbrce.ac.in/eee/eeelessonplans.php",
+      "https://www.lbrce.ac.in/eee/eeelessonplans.php"
+    ],
+    "https://lbrce.ac.in/eee/eeematerials.php": [
+      "https://lbrce.ac.in/eee/eeematerials.php",
+      "https://www.lbrce.ac.in/eee/eeematerials.php"
+    ],
+    "https://lbrce.ac.in/eee/eeememberships.php": [
+      "https://lbrce.ac.in/eee/eeememberships.php",
+      "https://www.lbrce.ac.in/eee/eeememberships.php"
+    ],
+    "https://lbrce.ac.in/eee/eeementors.php": [
+      "https://lbrce.ac.in/eee/eeementors.php",
+      "https://www.lbrce.ac.in/eee/eeementors.php"
+    ],
+    "https://lbrce.ac.in/eee/eeencc.php": [
+      "https://lbrce.ac.in/eee/eeencc.php",
+      "https://www.lbrce.ac.in/eee/eeencc.php"
+    ],
+    "https://lbrce.ac.in/eee/eeeplacements.php": [
+      "https://lbrce.ac.in/eee/eeeplacements.php",
+      "https://www.lbrce.ac.in/eee/eeeplacements.php"
+    ],
+    "https://lbrce.ac.in/eee/eeestudachievements.php": [
+      "https://lbrce.ac.in/eee/eeestudachievements.php",
+      "https://www.lbrce.ac.in/eee/eeestudachievements.php"
+    ],
+    "https://lbrce.ac.in/eee/eeestudentchapter.php": [
+      "https://lbrce.ac.in/eee/eeestudentchapter.php",
+      "https://www.lbrce.ac.in/eee/eeestudentchapter.php"
+    ],
+    "https://lbrce.ac.in/eee/eeestudents.php": [
+      "https://lbrce.ac.in/eee/eeestudents.php",
+      "https://www.lbrce.ac.in/eee/eeestudents.php"
+    ],
+    "https://lbrce.ac.in/eee/eeestudentslist.php": [
+      "https://lbrce.ac.in/eee/eeestudentslist.php",
+      "https://www.lbrce.ac.in/eee/eeestudentslist.php"
+    ],
+    "https://lbrce.ac.in/eee/eeestudprojects.php": [
+      "https://lbrce.ac.in/eee/eeestudprojects.php",
+      "https://www.lbrce.ac.in/eee/eeestudprojects.php"
+    ],
+    "https://lbrce.ac.in/eee/eeestudpublications.php": [
+      "https://lbrce.ac.in/eee/eeestudpublications.php",
+      "https://www.lbrce.ac.in/eee/eeestudpublications.php"
+    ],
+    "https://lbrce.ac.in/eee/eeetimetables.php": [
+      "https://lbrce.ac.in/eee/eeetimetables.php",
+      "https://www.lbrce.ac.in/eee/eeetimetables.php"
+    ],
+    "https://lbrce.ac.in/eee/index.php": [
+      "https://lbrce.ac.in/eee/index.php",
+      "https://www.lbrce.ac.in/eee/index.php"
+    ],
+    "https://lbrce.ac.in/index.php": [
+      "https://lbrce.ac.in/index.php",
+      "https://www.lbrce.ac.in/index.php"
+    ],
+    "https://lbrce.ac.in/mba/index.php": [
+      "https://lbrce.ac.in/mba/index.php",
+      "https://www.lbrce.ac.in/mba/index.php"
+    ],
+    "https://lbrce.ac.in/mba/mba_certifications.php": [
+      "https://lbrce.ac.in/mba/mba_certifications.php",
+      "https://www.lbrce.ac.in/mba/mba_certifications.php"
+    ],
+    "https://lbrce.ac.in/mba/mbaacadcalendars.php": [
+      "https://lbrce.ac.in/mba/mbaacadcalendars.php",
+      "https://www.lbrce.ac.in/mba/mbaacadcalendars.php"
+    ],
+    "https://lbrce.ac.in/mba/mbaalumni.php": [
+      "https://lbrce.ac.in/mba/mbaalumni.php",
+      "https://www.lbrce.ac.in/mba/mbaalumni.php"
+    ],
+    "https://lbrce.ac.in/mba/mbacocurricular.php": [
+      "https://lbrce.ac.in/mba/mbacocurricular.php",
+      "https://www.lbrce.ac.in/mba/mbacocurricular.php"
+    ],
+    "https://lbrce.ac.in/mba/mbacourse_syllabus.php": [
+      "https://lbrce.ac.in/mba/mbacourse_syllabus.php",
+      "https://www.lbrce.ac.in/mba/mbacourse_syllabus.php"
+    ],
+    "https://lbrce.ac.in/mba/mbadeptlibrary.php": [
+      "https://lbrce.ac.in/mba/mbadeptlibrary.php",
+      "https://www.lbrce.ac.in/mba/mbadeptlibrary.php"
+    ],
+    "https://lbrce.ac.in/mba/mbaespritclub.php": [
+      "https://lbrce.ac.in/mba/mbaespritclub.php",
+      "https://www.lbrce.ac.in/mba/mbaespritclub.php"
+    ],
+    "https://lbrce.ac.in/mba/mbaextracurricular.php": [
+      "https://lbrce.ac.in/mba/mbaextracurricular.php",
+      "https://www.lbrce.ac.in/mba/mbaextracurricular.php"
+    ],
+    "https://lbrce.ac.in/mba/mbafac_achievements.php": [
+      "https://lbrce.ac.in/mba/mbafac_achievements.php",
+      "https://www.lbrce.ac.in/mba/mbafac_achievements.php"
+    ],
+    "https://lbrce.ac.in/mba/mbahighereducation.php": [
+      "https://lbrce.ac.in/mba/mbahighereducation.php",
+      "https://www.lbrce.ac.in/mba/mbahighereducation.php"
+    ],
+    "https://lbrce.ac.in/mba/mbainternships.php": [
+      "https://lbrce.ac.in/mba/mbainternships.php",
+      "https://www.lbrce.ac.in/mba/mbainternships.php"
+    ],
+    "https://lbrce.ac.in/mba/mbalessonplans.php": [
+      "https://lbrce.ac.in/mba/mbalessonplans.php",
+      "https://www.lbrce.ac.in/mba/mbalessonplans.php"
+    ],
+    "https://lbrce.ac.in/mba/mbamaterials.php": [
+      "https://lbrce.ac.in/mba/mbamaterials.php",
+      "https://www.lbrce.ac.in/mba/mbamaterials.php"
+    ],
+    "https://lbrce.ac.in/mba/mbamemberships.php": [
+      "https://lbrce.ac.in/mba/mbamemberships.php",
+      "https://www.lbrce.ac.in/mba/mbamemberships.php"
+    ],
+    "https://lbrce.ac.in/mba/mbamentors.php": [
+      "https://lbrce.ac.in/mba/mbamentors.php",
+      "https://www.lbrce.ac.in/mba/mbamentors.php"
+    ],
+    "https://lbrce.ac.in/mba/mbaplacements.php": [
+      "https://lbrce.ac.in/mba/mbaplacements.php",
+      "https://www.lbrce.ac.in/mba/mbaplacements.php"
+    ],
+    "https://lbrce.ac.in/mba/mbastudachievements.php": [
+      "https://lbrce.ac.in/mba/mbastudachievements.php",
+      "https://www.lbrce.ac.in/mba/mbastudachievements.php"
+    ],
+    "https://lbrce.ac.in/mba/mbastudents.php": [
+      "https://lbrce.ac.in/mba/mbastudents.php",
+      "https://www.lbrce.ac.in/mba/mbastudents.php"
+    ],
+    "https://lbrce.ac.in/mba/mbastudentslist.php": [
+      "https://lbrce.ac.in/mba/mbastudentslist.php",
+      "https://www.lbrce.ac.in/mba/mbastudentslist.php"
+    ],
+    "https://lbrce.ac.in/mba/mbastudprojects.php": [
+      "https://lbrce.ac.in/mba/mbastudprojects.php",
+      "https://www.lbrce.ac.in/mba/mbastudprojects.php"
+    ],
+    "https://lbrce.ac.in/mba/mbastudpublications.php": [
+      "https://lbrce.ac.in/mba/mbastudpublications.php",
+      "https://www.lbrce.ac.in/mba/mbastudpublications.php"
+    ],
+    "https://lbrce.ac.in/mba/mbatimetables.php": [
+      "https://lbrce.ac.in/mba/mbatimetables.php",
+      "https://www.lbrce.ac.in/mba/mbatimetables.php"
+    ],
+    "https://lbrce.ac.in/nptel/index.php": [
+      "https://lbrce.ac.in/nptel/index.php",
+      "https://www.lbrce.ac.in/nptel/index.php"
+    ]
+  },
+  "short_pages": [],
+  "failure_count": 0,
+  "chunk_count": 473,
+  "category_counts": {
+    "college_profile": 1,
+    "timetable_directory": 34,
+    "admission": 7,
+    "department_contact": 190,
+    "placement": 48,
+    "student_list": 10,
+    "facility": 8,
+    "general_html": 13
+  },
+  "topic_counts": {
+    "college_profile": 1,
+    "timetable_directory": 34,
+    "admission_procedure": 7,
+    "department_contact": 190,
+    "placement_statistics": 48,
+    "student_list": 10,
+    "library": 8,
+    "general_html": 13
+  },
+  "department_counts": {
+    "none": 53,
+    "ai_ds": 22,
+    "ase": 25,
+    "ce": 25,
+    "cse": 40,
+    "cse_ai_ml": 13,
+    "ece": 27,
+    "eee": 27,
+    "it": 28,
+    "mba": 23,
+    "me": 28
+  },
+  "ready_for_embedding": true,
+  "pinecone_written": false,
+  "created_at": "2026-08-17T15:32:17.460997+00:00"
+}

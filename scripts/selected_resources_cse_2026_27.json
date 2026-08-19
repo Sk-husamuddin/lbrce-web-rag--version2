@@ -1,0 +1,183 @@
+{
+  "manifest_version": 1,
+  "source_page": "https://www.lbrce.ac.in/cse/csetimetables.php",
+  "scope": {
+    "department": "cse",
+    "department_name": "Computer Science and Engineering",
+    "academic_year": "2026-27",
+    "term": "odd",
+    "course": "B.Tech"
+  },
+  "timetables": [
+    {
+      "resource_type": "timetable_image",
+      "title": "CSE III Semester A Section Timetable 2026-27",
+      "url": "https://www.lbrce.ac.in/cse/cse_timetables/2026-27/CSE_26-27_ODD_SEM/III_SEM/III_SEM_A_SEC_TT_AY_2026-27.jpg",
+      "semester": "III",
+      "section": "A",
+      "regulation": "R23",
+      "class_room": "1F01",
+      "effective_from": "2026-07-13"
+    },
+    {
+      "resource_type": "timetable_image",
+      "title": "CSE III Semester B Section Timetable 2026-27",
+      "url": "https://www.lbrce.ac.in/cse/cse_timetables/2026-27/CSE_26-27_ODD_SEM/III_SEM/III_SEM_B_SEC_TT_AY_2026-27.jpg",
+      "semester": "III",
+      "section": "B",
+      "regulation": "R23",
+      "class_room": "1F03",
+      "effective_from": "2026-07-13"
+    },
+    {
+      "resource_type": "timetable_image",
+      "title": "CSE III Semester C Section Timetable 2026-27",
+      "url": "https://www.lbrce.ac.in/cse/cse_timetables/2026-27/CSE_26-27_ODD_SEM/III_SEM/III_SEM_C_SEC_TT_AY_2026-27.jpg",
+      "semester": "III",
+      "section": "C",
+      "regulation": "R23",
+      "class_room": "1S01",
+      "effective_from": "2026-07-13"
+    },
+    {
+      "resource_type": "timetable_image",
+      "title": "CSE III Semester D Section Timetable 2026-27",
+      "url": "https://www.lbrce.ac.in/cse/cse_timetables/2026-27/CSE_26-27_ODD_SEM/III_SEM/III_SEM_D_SEC_TT_AY_2026-27.jpg",
+      "semester": "III",
+      "section": "D",
+      "regulation": "R23",
+      "class_room": "1S03",
+      "effective_from": "2026-07-13"
+    },
+    {
+      "resource_type": "timetable_image",
+      "title": "CSE III Semester E Section Timetable 2026-27",
+      "url": "https://www.lbrce.ac.in/cse/cse_timetables/2026-27/CSE_26-27_ODD_SEM/III_SEM/III_SEM_E_SEC_TT_AY_2026-27.jpg",
+      "semester": "III",
+      "section": "E",
+      "regulation": "R23",
+      "class_room": "1S04",
+      "effective_from": "2026-07-13"
+    },
+    {
+      "resource_type": "timetable_image",
+      "title": "CSE III Semester F Section Timetable 2026-27",
+      "url": "https://www.lbrce.ac.in/cse/cse_timetables/2026-27/CSE_26-27_ODD_SEM/III_SEM/III_SEM_F_SEC_TT_AY_2026-27.jpg",
+      "semester": "III",
+      "section": "F",
+      "regulation": "R23",
+      "class_room": "1S13",
+      "effective_from": "2026-07-13"
+    },
+    {
+      "resource_type": "timetable_image",
+      "title": "CSE III Semester G Section Timetable 2026-27",
+      "url": "https://www.lbrce.ac.in/cse/cse_timetables/2026-27/CSE_26-27_ODD_SEM/III_SEM/III_SEM_G_SEC_TT_AY_2026-27.jpg",
+      "semester": "III",
+      "section": "G",
+      "regulation": "R23",
+      "class_room": "2F01",
+      "effective_from": "2026-07-13"
+    },
+    {
+      "resource_type": "timetable_image",
+      "title": "CSE III Semester H Section Timetable 2026-27",
+      "url": "https://www.lbrce.ac.in/cse/cse_timetables/2026-27/CSE_26-27_ODD_SEM/III_SEM/III_SEM_H_SEC_TT_AY_2026-27.jpg",
+      "semester": "III",
+      "section": "H",
+      "regulation": "R23",
+      "class_room": "Rotation",
+      "effective_from": "2026-07-13"
+    },
+    {
+      "resource_type": "timetable_image",
+      "title": "CSE V Semester A Section Timetable 2026-27",
+      "url": "https://www.lbrce.ac.in/cse/cse_timetables/2026-27/CSE_26-27_ODD_SEM/V_SEM/V_SEM_A_SEC_TT_AY_2026-27_lat.jpeg",
+      "semester": "V",
+      "section": "A"
+    },
+    {
+      "resource_type": "timetable_image",
+      "title": "CSE V Semester B Section Timetable 2026-27",
+      "url": "https://www.lbrce.ac.in/cse/cse_timetables/2026-27/CSE_26-27_ODD_SEM/V_SEM/V_SEM_B_SEC_TT_AY_2026-27.jpg",
+      "semester": "V",
+      "section": "B"
+    },
+    {
+      "resource_type": "timetable_image",
+      "title": "CSE V Semester C Section Timetable 2026-27",
+      "url": "https://www.lbrce.ac.in/cse/cse_timetables/2026-27/CSE_26-27_ODD_SEM/V_SEM/V_SEM_C_SEC_TT_AY_2026-27.jpg",
+      "semester": "V",
+      "section": "C"
+    },
+    {
+      "resource_type": "timetable_image",
+      "title": "CSE V Semester D Section Timetable 2026-27",
+      "url": "https://www.lbrce.ac.in/cse/cse_timetables/2026-27/CSE_26-27_ODD_SEM/V_SEM/V_SEM_D_SEC_TT_AY_2026-27.jpg",
+      "semester": "V",
+      "section": "D"
+    },
+    {
+      "resource_type": "timetable_image",
+      "title": "CSE V Semester E Section Timetable 2026-27",
+      "url": "https://www.lbrce.ac.in/cse/cse_timetables/2026-27/CSE_26-27_ODD_SEM/V_SEM/V_SEM_E_SEC_TT_AY_2026-27.jpg",
+      "semester": "V",
+      "section": "E"
+    },
+    {
+      "resource_type": "timetable_image",
+      "title": "CSE V Semester F Section Timetable 2026-27",
+      "url": "https://www.lbrce.ac.in/cse/cse_timetables/2026-27/CSE_26-27_ODD_SEM/V_SEM/V_SEM_F_SEC_TT_AY_2026-27.jpg",
+      "semester": "V",
+      "section": "F"
+    },
+    {
+      "resource_type": "timetable_image",
+      "title": "CSE V Semester G Section Timetable 2026-27",
+      "url": "https://www.lbrce.ac.in/cse/cse_timetables/2026-27/CSE_26-27_ODD_SEM/V_SEM/V_SEM_G_SEC_TT_AY_2026-27_lat.jpeg",
+      "semester": "V",
+      "section": "G"
+    },
+    {
+      "resource_type": "timetable_image",
+      "title": "CSE VII Semester A Section Timetable 2026-27",
+      "url": "https://www.lbrce.ac.in/cse/cse_timetables/2026-27/CSE_26-27_ODD_SEM/VII_SEM/VII_SEM_A_SEC_TT_AY_2026-27.jpg",
+      "semester": "VII",
+      "section": "A"
+    },
+    {
+      "resource_type": "timetable_image",
+      "title": "CSE VII Semester B Section Timetable 2026-27",
+      "url": "https://www.lbrce.ac.in/cse/cse_timetables/2026-27/CSE_26-27_ODD_SEM/VII_SEM/VII_SEM_B_SEC_TT_AY_2026-27.jpg",
+      "semester": "VII",
+      "section": "B"
+    },
+    {
+      "resource_type": "timetable_image",
+      "title": "CSE VII Semester C Section Timetable 2026-27",
+      "url": "https://www.lbrce.ac.in/cse/cse_timetables/2026-27/CSE_26-27_ODD_SEM/VII_SEM/VII_SEM_C_SEC_TT_AY_2026-27.jpg",
+      "semester": "VII",
+      "section": "C"
+    },
+    {
+      "resource_type": "timetable_image",
+      "title": "CSE VII Semester D Section Timetable 2026-27",
+      "url": "https://www.lbrce.ac.in/cse/cse_timetables/2026-27/CSE_26-27_ODD_SEM/VII_SEM/VII_SEM_D_SEC_TT_AY_2026-27.jpg",
+      "semester": "VII",
+      "section": "D"
+    }
+  ],
+  "pdfs": [
+    {
+      "resource_type": "pdf",
+      "title": "R23 CSE Syllabus",
+      "url": "https://lbrce.ac.in/academics/syllabus/R23/R23_CSE_Syllabus1.pdf",
+      "source_type": "pdf",
+      "department": "cse",
+      "document_type": "syllabus",
+      "regulation": "R23",
+      "page_count": 179,
+      "priority": "high"
+    }
+  ]
+}
