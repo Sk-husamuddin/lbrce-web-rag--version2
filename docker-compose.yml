@@ -1,0 +1,20 @@
+services:
+  lbrce-backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    environment:
+      PORT: 8000
+      HF_HOME: /opt/huggingface
+      TRANSFORMERS_CACHE: /opt/huggingface
+      TOKENIZERS_PARALLELISM: "false"
+    ports:
+      - "${BACKEND_PORT:-8000}:8000"
+    volumes:
+      - lbrce_huggingface_cache:/opt/huggingface
+    restart: unless-stopped
+
+volumes:
+  lbrce_huggingface_cache:
