@@ -17,3 +17,7 @@ langchain-openai>=0.1.0
 numpy>=1.26.0
 pytest>=8.0.0
 pytest-asyncio>=0.23.0
+numpy>=2.0,<3.0
+sentence-transformers>=5.0,<6.0
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.3.1+cpu
