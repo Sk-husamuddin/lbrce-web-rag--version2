@@ -1,32 +1,19 @@
-# LBRCE RAG backend deployment dependencies
-# Python 3.10+ recommended; Python 3.11 is supported.
+fastapi>=0.110.0
+uvicorn>=0.28.0
+pydantic>=2.6.0
+pydantic-settings>=2.2.0
+python-dotenv>=1.0.1
+beautifulsoup4>=4.12.0
+pymupdf>=1.24.0
+httpx>=0.27.0
+openai>=1.40.0
+Pillow>=10.0.0
 
-# API server and configuration
-fastapi>=0.115.0,<1.0.0
-uvicorn[standard]>=0.30.0,<1.0.0
-pydantic>=2.8.0,<3.0.0
-pydantic-settings>=2.4.0,<3.0.0
-python-dotenv>=1.0.1,<2.0.0
-
-# LangGraph orchestration
-langgraph>=0.2.0,<1.0.0
-langchain-core>=0.3.0,<1.0.0
-
-# OpenAI-compatible answer generation and HTTP clients
-openai>=1.40.0,<3.0.0
-httpx>=0.27.0,<1.0.0
-requests>=2.31.0,<3.0.0
-
-# Pinecone retrieval and Tavily fallback search
-pinecone>=5.0.0,<8.0.0
-tavily-python>=0.3.0,<1.0.0
-
-# Local BGE embeddings
-sentence-transformers>=3.0.0,<6.0.0
-torch>=2.2.0,<3.0.0
-numpy>=1.26.0,<3.0.0
-
-# HTML, PDF, and image processing
-beautifulsoup4>=4.12.0,<5.0.0
-pymupdf>=1.24.0,<2.0.0
-Pillow>=10.0.0,<13.0.0
+pinecone>=5.0.0
+tavily-python>=0.3.0
+langgraph>=0.0.30
+langchain-core>=0.1.30
+langchain-openai>=0.1.0
+numpy>=1.26.0
+pytest>=8.0.0
+pytest-asyncio>=0.23.0
