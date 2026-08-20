@@ -744,6 +744,8 @@ async def main():
                             "regulation": manifest_record.get("regulation"),
                             "priority": manifest_record.get("priority"),
                             "selected_resource": "true",
+                            "page_category": manifest_record.get("page_category"),
+                            "topic": manifest_record.get("topic"),
                         })
 
                 if not pdf_chunks:
