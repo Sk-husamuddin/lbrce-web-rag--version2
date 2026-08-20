@@ -10,9 +10,9 @@ import { ThemeToggle } from '@/components/theme-toggle'
 
 const SUGGESTIONS = [
   'Show the CSE V semester Section F timetable for 2026-27',
-  'Show the AI and Data Science V semester timetable for 2026-27',
-  'What are the R23 B.Tech regulations at LBRCE?',
-  'Who is the current HOD of ECE?',
+  'What is the distance between vijayawada and LBRCE?',
+  'Show me the Students list of CSE 3rd year F section',
+  'Who is the current HOD of CSE department ?',
 ]
 
 export function ReferenceDesk() {
