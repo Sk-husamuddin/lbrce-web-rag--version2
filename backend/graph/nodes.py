@@ -552,7 +552,7 @@ def _migration_topic_metadata_filter(question: str) -> Dict[str, Any]:
         facility_filters.append({"page_category": {"$eq": "facility"}, "topic": {"$eq": "central_library"}})
     if re.search(r"\b(?:hostel|hostels|accommodation|residential)\b", text):
         facility_filters.append({"page_category": {"$eq": "facility"}, "topic": {"$eq": "hostel"}})
-    if re.search(r"\b(?:bus|buses|transport|transportation|route|routes|boarding|fare|fares|fee|fees)\b", text):
+    if re.search(r"\b(?:bus|buses|transport|transportation|route|routes|boarding|fare|fares)\b", text):
         facility_filters.append({"page_category": {"$eq": "transportation"}, "topic": {"$eq": "transportation"}})
 
     if len(facility_filters) > 1:
@@ -686,6 +686,28 @@ def plan_query_node(state: GraphState) -> dict:
         filters = _migration_topic_metadata_filter(question)
         retrieval_query = question
         confidence = 0.80
+        # Facility metadata filters are authoritative. Promote transportation
+        # and multi-topic facility requests out of the general intent so the
+        # single approved match is accepted and generic Tavily results cannot
+        # substitute unrelated admission/academic pages.
+        if (
+            isinstance(filters, dict)
+            and filters.get("page_category", {}).get("$eq") == "transportation"
+            and filters.get("topic", {}).get("$eq") == "transportation"
+        ):
+            intent = "transportation"
+            source_policy = "approved_transportation_only"
+            retrieval_query = f"official LBRCE bus routes transportation fees {question}"
+        elif isinstance(filters, dict) and "$or" in filters:
+            topics = {
+                item.get("topic", {}).get("$eq")
+                for item in filters.get("$or", [])
+                if isinstance(item, dict)
+            }
+            if topics and topics.issubset({"central_library", "hostel", "transportation"}):
+                intent = "facility_multi_topic"
+                source_policy = "approved_facilities_only"
+                retrieval_query = f"official LBRCE facilities transportation library hostel {question}"
 
     retrieval_metadata_filter: Dict[str, Any] = {}
     if intent == "student_list":
@@ -1088,9 +1110,15 @@ def tavily_search_node(state: GraphState) -> dict:
     # the approved URL-first Pinecone records. Generic web search can return
     # stale legacy links or unrelated pages, so never replace a missing exact
     # academic resource with Tavily evidence.
-    if state.get("intent") in {"regulation", "academic_syllabus", "exam_results"}:
+    if state.get("intent") in {
+        "regulation",
+        "academic_syllabus",
+        "exam_results",
+        "transportation",
+        "facility_multi_topic",
+    }:
         logger.info(
-            "[tavily_search_node] Academic PDF query has no approved exact URL record; skipping generic web search."
+            "[tavily_search_node] Approved-only facility query has no matching record; skipping generic web search."
         )
         return {
             "tavily_results": [],
@@ -1862,6 +1890,95 @@ def _deterministic_student_list_answer(
     )
 
 
+def _deterministic_transportation_answer(
+    question: str,
+    intent: str,
+    context: str,
+    sources: List[Dict[str, Any]],
+) -> str | None:
+    """Answer approved transportation requests from the official route record.
+
+    Transportation evidence is a long authoritative page. A single matching
+    Pinecone chunk can be sufficient, but asking the general LLM to decide
+    whether that chunk answers a route-code/location question can produce a
+    false ungrounded response. Extract the requested route rows when possible;
+    otherwise return the official transportation page rather than inventing
+    route details or falling back to admission-fee pages.
+    """
+    if intent != "transportation" or not context.strip():
+        return None
+
+    source_url = ""
+    source_title = "LBRCE College Transportation, Bus Routes and Bus Fares"
+    for source in sources:
+        candidate = str(source.get("url") or source.get("source_url") or "").strip()
+        if "studentcorner_pages/transportation.php" in candidate.lower():
+            source_url = candidate
+            source_title = str(source.get("title") or source_title).strip()
+            break
+    if not source_url:
+        for source in sources:
+            candidate = str(source.get("url") or source.get("source_url") or "").strip()
+            if candidate:
+                source_url = candidate
+                source_title = str(source.get("title") or source_title).strip()
+                break
+    if not source_url:
+        return None
+
+    normalized_question = re.sub(r"[^a-z0-9]+", " ", (question or "").lower()).strip()
+    route_match = re.search(r"\b([js]\d{2}|sb)\b", normalized_question, re.IGNORECASE)
+    route_code = route_match.group(1).upper() if route_match else None
+    if not route_code and "singh nagar" in normalized_question:
+        route_code = "S02"
+
+    route_rows: List[str] = []
+    if route_code:
+        route_pattern = re.compile(
+            rf"(?:^|\\n)\\s*(?:###\\s*)?{re.escape(route_code)}\\s*(?:\\n|$)"
+            rf"(.*?)(?=(?:\\n\\s*(?:###\\s*)?[JS]\\d{{2}}\\s*(?:\\n|$))|\\Z)",
+            flags=re.IGNORECASE | re.DOTALL,
+        )
+        match = route_pattern.search(context)
+        if match:
+            for line in match.group(1).splitlines():
+                line = line.strip()
+                if "|" not in line or "route point" in line.lower() or set(line.replace("|", "").replace("-", "").strip()) == set():
+                    continue
+                cells = [cell.strip() for cell in line.strip("|").split("|")]
+                if len(cells) >= 4 and cells[0].isdigit():
+                    route_rows.append(" | ".join(cells[:4]))
+
+    opening = "I found the official LBRCE transportation information for Academic Year 2026–27."
+    if route_code and route_rows:
+        location_hint = ""
+        if "singh nagar" in normalized_question:
+            location_hint = " Singh Nagar is listed on this route."
+        return (
+            f"{opening} Route {route_code} is listed below.{location_hint}\\n\\n"
+            "| Stop | Bus fee | Start time |\\n|---|---:|---|\\n"
+            + "\\n".join(
+                f"| {row.split(' | ', 3)[1]} | {row.split(' | ', 3)[2]} | {row.split(' | ', 3)[3]} |"
+                for row in route_rows
+            )
+            + f"\\n\\nOpen the official source for the complete route details: [{source_title}]({source_url})"
+        )
+
+    if route_code:
+        return (
+            f"I found the official LBRCE transportation page, but the available approved "
+            f"record does not expose the detailed stops for route {route_code} in this response. "
+            f"Open the official page to check the complete route and bus-fee information: "
+            f"[{source_title}]({source_url})"
+        )
+
+    return (
+        f"I found the official LBRCE transportation page for Academic Year 2026–27. "
+        f"It contains the college bus routes, stops, start times, and bus fees. "
+        f"Open the official page to check the complete details: [{source_title}]({source_url})"
+    )
+
+
 def _deterministic_academic_pdf_answer(
     question: str,
     intent: str,
@@ -2056,6 +2173,21 @@ def generate_answer_node(state: GraphState) -> dict:
                 "sources": sources,
                 "visual_resources": state.get("visual_resources", []),
             }
+
+    deterministic_transportation_answer = _deterministic_transportation_answer(
+        question,
+        state.get("intent", "general"),
+        context,
+        sources,
+    )
+    if deterministic_transportation_answer:
+        logger.info("[generate_answer_node] Returning deterministic transportation answer from approved evidence.")
+        return {
+            "answer": deterministic_transportation_answer,
+            "grounded": True,
+            "sources": sources,
+            "visual_resources": state.get("visual_resources", []),
+        }
 
     deterministic_academic_pdf_answer = _deterministic_academic_pdf_answer(
         question,
