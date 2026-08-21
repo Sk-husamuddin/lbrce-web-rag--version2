@@ -141,15 +141,15 @@ export function ReferenceDesk() {
                 <div className="rounded-md border border-border bg-background/70 p-4">
                   <p className="font-mono text-[0.65rem] font-semibold tracking-[0.12em] text-primary">02 · R23 DOCUMENTS</p>
                   <p className="mt-2 text-sm leading-relaxed text-foreground">
-                    Ask about the indexed R23 regulation PDFs for B.Tech, M.Tech, MBA, and
+                    Ask about the R23 regulation PDFs for B.Tech, M.Tech, MBA, and
                     Honors / Minors programmes.
                   </p>
                 </div>
                 <div className="rounded-md border border-border bg-background/70 p-4">
                   <p className="font-mono text-[0.65rem] font-semibold tracking-[0.12em] text-primary">03 · WEBPAGES</p>
                   <p className="mt-2 text-sm leading-relaxed text-foreground">
-                    Ask about indexed LBRCE webpages, departments, courses, admissions,
-                    facilities, contacts, and other official college information.
+                    Ask about LBRCE webpages, departments, courses, admissions,
+                    facilities, contacts, bus fares and other official college information.
                   </p>
                 </div>
               </div>
@@ -197,7 +197,7 @@ export function ReferenceDesk() {
           <p className="mt-2 text-center font-mono text-[0.66rem] uppercase tracking-[0.12em] text-muted-foreground">
             Each question is answered independently · no conversation history is
             stored <span aria-hidden="true">·</span>{' '}
-            <span className="whitespace-nowrap">Created by SHAIK HUSAMUDDIN-CSE-F/LBRCE</span>
+            <span className="whitespace-nowrap">Created by SHAIK HUSAMUDDIN CSE-F/LBRCE</span>
           </p>
         </div>
       </div>
