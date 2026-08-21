@@ -2094,6 +2094,18 @@ def _deterministic_transportation_answer(
     if not route_code and documents:
         location_route_codes = _location_matching_route_codes(question, documents)
 
+    # The initial source title may belong to the top semantic match rather
+    # than the route actually selected from the question and route documents.
+    # Rebuild it so the citation title agrees with the answer text.
+    if route_code:
+        source_title = f"LBRCE Bus Route {route_code} and Bus Fare 2026-27"
+    elif len(location_route_codes) == 1:
+        source_title = (
+            f"LBRCE Bus Route {location_route_codes[0]} and Bus Fare 2026-27"
+        )
+    elif len(location_route_codes) > 1:
+        source_title = "LBRCE College Transportation, Bus Routes and Bus Fares"
+
     route_rows: List[str] = []
     if route_code:
         route_pattern = re.compile(
