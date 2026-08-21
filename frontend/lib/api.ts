@@ -5,7 +5,7 @@
 
 export const API_BASE_URL =
   process.env.NEXT_PUBLIC_API_BASE_URL?.replace(/\/$/, '') ??
-  'https://lbrce-web-rag-version2.onrender.com'
+  'http://localhost:8000'
 
 export type SourceType = 'html' | 'pdf' | 'web' | 'timetable_image'
 

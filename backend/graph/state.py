@@ -45,9 +45,10 @@ class GraphState(TypedDict, total=False):
                                    the Pinecone-sourced answer was ungrounded
                                    and Tavily hasn't been tried yet.
         context                  – assembled evidence text for the LLM
+        context_docs             – per-document evidence used to build context
         answer                   – final LLM-generated answer
         sources                  – list of { title, url, page, source_type }
-        visual_resources        – matched timetable images and PDFs for display
+        visual_resources         – matched timetable images and PDFs for display
         error                    – error message to surface to the caller
 
     Conversation history, user memory, and any cross-request persistence
@@ -90,6 +91,7 @@ class GraphState(TypedDict, total=False):
 
     # LLM input / output
     context: str
+    context_docs: List[Dict[str, Any]]
     answer: str
     sources: List[Dict[str, Any]]
     visual_resources: List[Dict[str, Any]]

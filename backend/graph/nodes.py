@@ -14,6 +14,7 @@ No conversation memory is stored anywhere in this module.
 
 from __future__ import annotations
 
+import difflib
 import json
 import logging
 import re
@@ -834,7 +835,10 @@ def retrieve_node(state: GraphState) -> dict:
         # when the exact timetable image exists in Pinecone.
         retrieval_top_k = (
             max(configured_top_k, 50)
-            if _is_timetable_query(question) or state.get("intent") == "student_list"
+            if (
+                _is_timetable_query(question)
+                or state.get("intent") in ("student_list", "facility_multi_topic")
+            )
             else configured_top_k
         )
         query_filters = state.get("query_filters") or {}
@@ -861,8 +865,100 @@ def retrieve_node(state: GraphState) -> dict:
             _get_pinecone_indexer(),
             **retrieve_kwargs,
         )
+
+        if (
+            state.get("intent") == "facility_multi_topic"
+            and isinstance(metadata_filter, dict)
+            and "$or" in metadata_filter
+        ):
+            requested_topics = [
+                branch.get("topic", {}).get("$eq")
+                for branch in metadata_filter.get("$or", [])
+                if isinstance(branch, dict)
+            ]
+            present_topics = {result.get("topic") for result in results}
+            missing_topics = [
+                topic for topic in requested_topics
+                if topic and topic not in present_topics
+            ]
+            for topic in missing_topics:
+                topic_filter = next(
+                    (
+                        branch
+                        for branch in metadata_filter["$or"]
+                        if branch.get("topic", {}).get("$eq") == topic
+                    ),
+                    None,
+                )
+                if not topic_filter:
+                    continue
+                try:
+                    topic_results = retrieve(
+                        retrieval_question,
+                        _get_embedding_generator(),
+                        _get_pinecone_indexer(),
+                        top_k=2,
+                        metadata_filter=topic_filter,
+                    )
+                    results.extend(topic_results)
+                except (NoResultsError, PineconeUnavailableError):
+                    logger.info(
+                        "[retrieve_node] No additional approved facility records found for topic=%s.",
+                        topic,
+                    )
+
+        raw_results = list(results)
+        raw_scores = [r.get("similarity_score", 0.0) for r in raw_results]
+        logger.info(
+            "[retrieve_node] Retrieved %d raw chunks (top score=%.3f)",
+            len(raw_results),
+            max(raw_scores, default=0.0),
+        )
+        for match_number, result in enumerate(raw_results, start=1):
+            logger.info(
+                "[PINECONE MATCH %d]\n"
+                "score: %.3f\n"
+                "id: %s\n"
+                "source_url: %s\n"
+                "metadata: %s\n"
+                "full_text:\n%s",
+                match_number,
+                float(result.get("similarity_score", 0.0) or 0.0),
+                result.get("chunk_id", ""),
+                result.get("source_url", ""),
+                {
+                    key: value
+                    for key, value in result.items()
+                    if key not in {"chunk_id", "chunk_text", "source_url"}
+                },
+                result.get("chunk_text", ""),
+            )
+
+        if state.get("intent") == "facility_multi_topic":
+            # Keep the complete raw candidate set above for CLI debugging, but
+            # limit full-text context sent to the LLM so near-duplicate route
+            # records cannot overflow the provider payload limit.
+            per_topic_cap = 3
+            grouped: Dict[str, List[Dict[str, Any]]] = {}
+            for result in raw_results:
+                grouped.setdefault(result.get("topic", ""), []).append(result)
+            trimmed_results: List[Dict[str, Any]] = []
+            for topic, docs in grouped.items():
+                docs_sorted = sorted(
+                    docs,
+                    key=lambda doc: doc.get("similarity_score", 0.0),
+                    reverse=True,
+                )
+                trimmed_results.extend(docs_sorted[:per_topic_cap])
+            logger.info(
+                "[retrieve_node] facility_multi_topic trimmed %d raw chunks to %d for context (cap=%d per topic).",
+                len(raw_results),
+                len(trimmed_results),
+                per_topic_cap,
+            )
+            results = trimmed_results
+
         scores = [r.get("similarity_score", 0.0) for r in results]
-        logger.info("[retrieve_node] Retrieved %d chunks (top score=%.3f)", len(results), max(scores, default=0.0))
         return {
             "retrieved_documents": results,
             "retrieval_scores": scores,
@@ -987,16 +1083,12 @@ def evaluate_evidence_node(state: GraphState) -> dict:
     # structured intent, and must not bypass the two-match evidence safeguard.
     # Only genuinely structured intents earn the single-match exemption.
     intent = state.get("intent", "general")
-    exact_filter_applied = (
-        bool(state.get("retrieval_used_metadata_filter", False))
-        and intent != "general"
-    )
+    # A general-intent query can still carry a specific authoritative
+    # page_category/topic filter, such as the campus bank page. Allow the
+    # single-match exemption, but always require lexical evidence below.
+    exact_filter_applied = bool(state.get("retrieval_used_metadata_filter", False))
     sufficient = _evidence_sufficient(scores, threshold, exact_filter_applied)
-    if (
-        intent == "general"
-        and sufficient
-        and not exact_filter_applied
-    ):
+    if intent == "general" and sufficient:
         rewritten_or_original = state.get("rewritten_query") or question
         retrieved_documents = state.get("retrieved_documents", [])
         if not _general_query_has_lexical_evidence(rewritten_or_original, retrieved_documents):
@@ -1688,6 +1780,7 @@ def assemble_context_node(state: GraphState) -> dict:
     )
     return {
         "context": context,
+        "context_docs": context_docs,
         "sources": sources,
         "visual_resources": visual_resources,
     }
@@ -1890,11 +1983,76 @@ def _deterministic_student_list_answer(
     )
 
 
+def _fuzzy_location_token_match(
+    question_token: str,
+    candidate_words: List[str],
+    cutoff: float = 0.78,
+) -> bool:
+    """Return whether a question token closely matches any route-point word."""
+    if question_token in candidate_words:
+        return True
+    close = difflib.get_close_matches(
+        question_token,
+        candidate_words,
+        n=1,
+        cutoff=cutoff,
+    )
+    return bool(close)
+
+
+def _location_matching_route_codes(
+    question: str,
+    documents: List[Dict[str, Any]],
+) -> List[str]:
+    """Return route codes whose route-point words fuzzily match the question."""
+    normalized_question = re.sub(r"[^a-z0-9]+", " ", (question or "").lower()).strip()
+    ignored_terms = {
+        "which", "route", "routes", "serves", "serve", "bus", "buses",
+        "transport", "transportation", "college", "official", "lbrce",
+        "tell", "about", "show", "give", "me", "the", "for", "from",
+        "does", "have", "there", "what", "where", "can", "i", "is",
+        "travel", "via",
+    }
+    location_tokens = [
+        token
+        for token in normalized_question.split()
+        if len(token) > 3 and token not in ignored_terms
+    ]
+    if not location_tokens:
+        return []
+
+    matches: List[str] = []
+    for doc in documents:
+        route_code = str(doc.get("route_code") or "").strip().upper()
+        if not route_code:
+            continue
+
+        chunk_text = str(doc.get("chunk_text") or "").lower()
+        route_points = doc.get("route_points") or []
+        candidate_words: List[str] = list({
+            word
+            for phrase in [chunk_text] + [str(point).lower() for point in route_points]
+            for word in re.sub(r"[^a-z0-9]+", " ", phrase).split()
+            if len(word) > 3
+        })
+        if not candidate_words:
+            continue
+
+        if any(
+            _fuzzy_location_token_match(token, candidate_words)
+            for token in location_tokens
+        ):
+            if route_code not in matches:
+                matches.append(route_code)
+    return matches
+
+
 def _deterministic_transportation_answer(
     question: str,
     intent: str,
     context: str,
     sources: List[Dict[str, Any]],
+    documents: List[Dict[str, Any]] | None = None,
 ) -> str | None:
     """Answer approved transportation requests from the official route record.
 
@@ -1932,11 +2090,15 @@ def _deterministic_transportation_answer(
     if not route_code and "singh nagar" in normalized_question:
         route_code = "S02"
 
+    location_route_codes: List[str] = []
+    if not route_code and documents:
+        location_route_codes = _location_matching_route_codes(question, documents)
+
     route_rows: List[str] = []
     if route_code:
         route_pattern = re.compile(
-            rf"(?:^|\\n)\\s*(?:###\\s*)?{re.escape(route_code)}\\s*(?:\\n|$)"
-            rf"(.*?)(?=(?:\\n\\s*(?:###\\s*)?[JS]\\d{{2}}\\s*(?:\\n|$))|\\Z)",
+            rf"(?:^|\n)\s*(?:###\s*)?{re.escape(route_code)}\s*(?:\n|$)"
+            rf"(.*?)(?=(?:\n\s*(?:###\s*)?[JS]\d{{2}}\s*(?:\n|$))|\Z)",
             flags=re.IGNORECASE | re.DOTALL,
         )
         match = route_pattern.search(context)
@@ -1955,13 +2117,13 @@ def _deterministic_transportation_answer(
         if "singh nagar" in normalized_question:
             location_hint = " Singh Nagar is listed on this route."
         return (
-            f"{opening} Route {route_code} is listed below.{location_hint}\\n\\n"
-            "| Stop | Bus fee | Start time |\\n|---|---:|---|\\n"
-            + "\\n".join(
+            f"{opening} Route {route_code} is listed below.{location_hint}\n\n"
+            "| Stop | Bus fee | Start time |\n|---|---:|---|\n"
+            + "\n".join(
                 f"| {row.split(' | ', 3)[1]} | {row.split(' | ', 3)[2]} | {row.split(' | ', 3)[3]} |"
                 for row in route_rows
             )
-            + f"\\n\\nOpen the official source for the complete route details: [{source_title}]({source_url})"
+            + f"\n\nOpen the official source for the complete route details: [{source_title}]({source_url})"
         )
 
     if route_code:
@@ -1969,6 +2131,16 @@ def _deterministic_transportation_answer(
             f"I found the official LBRCE transportation page, but the available approved "
             f"record does not expose the detailed stops for route {route_code} in this response. "
             f"Open the official page to check the complete route and bus-fee information: "
+            f"[{source_title}]({source_url})"
+        )
+
+    if location_route_codes:
+        codes_display = ", ".join(location_route_codes)
+        plural = "s" if len(location_route_codes) > 1 else ""
+        verb = "serve" if len(location_route_codes) > 1 else "serves"
+        return (
+            f"{opening} Route{plural} {codes_display} {verb} the requested location. "
+            f"Open the official page for the complete stop list and timings: "
             f"[{source_title}]({source_url})"
         )
 
@@ -2179,6 +2351,7 @@ def generate_answer_node(state: GraphState) -> dict:
         state.get("intent", "general"),
         context,
         sources,
+        documents=state.get("context_docs", state.get("retrieved_documents", [])),
     )
     if deterministic_transportation_answer:
         logger.info("[generate_answer_node] Returning deterministic transportation answer from approved evidence.")
